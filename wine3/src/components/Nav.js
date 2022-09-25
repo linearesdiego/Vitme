@@ -3,6 +3,7 @@ import discord from '../assets/icons/discord.png';
 import twitter from '../assets/icons/twitter.png';
 import telegram from '../assets/icons/telegram.png';
 import { IoIosArrowDropdown, IoIosArrowDropup } from 'react-icons/io';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -17,15 +18,22 @@ const Nav = () => {
             : 'hidden'
         }
       >
+        <button
+          onClick={() => {
+            setShowMenu(!showMenu);
+          }}
+        >
+          x
+        </button>
         <div>
           <div className="w-full p-[20px] border-b-[0.5px] font-poppins font-medium text-[16px] text-white">
-            <p>¿Cómo funciona?</p>
+            <Link to={'/comofunciona'}>¿Cómo funciona?</Link>
           </div>
           <div className="w-full border-b-[0.5px] font-poppins font-medium text-[16px] text-white">
             <div className="flex justify-between p-[20px]">
               <p
                 className={
-                  showLote && 'bg-white text-black rounded-full px-2 -ml-2'
+                  showLote && 'bg-white text-darkGrey rounded-full px-2 -ml-2'
                 }
               >
                 Lote Exclusivo
@@ -45,13 +53,13 @@ const Nav = () => {
             {showLote && (
               <div className="bg-[#4E4E4E] font-poppins font-light text-[16px] text-white">
                 <div className="w-full pl-[20px] py-[15px]">
-                  <p>Pinot Noir</p>
+                  <Link to={'/lote'}>Pinot Noir</Link>
                 </div>
                 <div className="w-full pl-[20px] py-[15px]">
-                  <p>Syrah</p>
+                  <Link to={'/lote'}>Syrah</Link>
                 </div>
                 <div className="w-full pl-[20px] py-[15px]">
-                  <p>Blend</p>
+                  <Link to={'/lote'}>Blend</Link>
                 </div>
               </div>
             )}
@@ -80,19 +88,19 @@ const Nav = () => {
             {showElefante && (
               <div className="bg-[#4E4E4E] font-poppins font-light text-[16px] text-white">
                 <div className="w-full pl-[20px] py-[15px]">
-                  <p>Historia</p>
+                  <Link to={'/elefante'}>Historia</Link>
                 </div>
                 <div className="w-full pl-[20px] py-[15px]">
-                  <p>Fede y Juli</p>
+                  <Link to={'/elefante'}>Fede y Juli</Link>
                 </div>
                 <div className="w-full pl-[20px] py-[15px]">
-                  <p>Triple Impacto</p>
+                  <Link to={'/elefante'}>Triple Impacto</Link>
                 </div>
               </div>
             )}
           </div>
           <div className="w-full p-[20px] border-b-[0.5px] font-poppins font-medium text-[16px] text-white">
-            <p>El equipo</p>
+            <Link to={'/elequipo'}>El equipo</Link>
           </div>
         </div>
         <div className="w-full flex flex-col">
