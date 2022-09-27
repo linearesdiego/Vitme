@@ -11,6 +11,11 @@ module.exports = {
         unactiveGrey: '#E0E0E0',
         grey: '#979696',
       },
+      extend: {
+        height: {
+          '55/6': '90%',
+        },
+      },
     },
     fontFamily: {
       poppins: ['Poppins', 'sans-serif'],

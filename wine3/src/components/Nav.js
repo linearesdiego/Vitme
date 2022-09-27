@@ -10,7 +10,7 @@ const Nav = () => {
   const [showLote, setShowLote] = useState(false);
   const [showElefante, setShowElefante] = useState(false);
   return (
-    <div className="absolute top-0 left-0 w-screen z-40 h-[55px] bg-white flex">
+    <div className="absolute top-0 left-0 w-screen z-40 h-[55px] flex">
       <div
         className={
           showMenu
