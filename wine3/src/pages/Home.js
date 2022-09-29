@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div>
       <Swiper
-        className="mySwiper swiper-v h-screen bg-lime-400"
+        className="mySwiper swiper-v h-screen"
         spaceBetween={0}
         direction={'vertical'}
         pagination={{
