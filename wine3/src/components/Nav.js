@@ -11,6 +11,14 @@ const Nav = () => {
   const [showElefante, setShowElefante] = useState(false);
   return (
     <div className="absolute top-0 left-0 w-screen z-40 h-[55px] flex">
+      {showMenu && (
+        <button
+          className="w-screen h-screen "
+          onClick={() => {
+            setShowMenu(!showMenu);
+          }}
+        ></button>
+      )}
       <div
         className={
           showMenu
@@ -18,13 +26,6 @@ const Nav = () => {
             : 'hidden'
         }
       >
-        <button
-          onClick={() => {
-            setShowMenu(!showMenu);
-          }}
-        >
-          x
-        </button>
         <div>
           <div className="w-full p-[20px] border-b-[0.5px] font-poppins font-medium text-[16px] text-white">
             <Link to={'/comofunciona'}>¿Cómo funciona?</Link>
