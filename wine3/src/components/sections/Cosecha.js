@@ -1,7 +1,8 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper';
+import { Pagination, Navigation } from 'swiper';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import 'swiper/css';
 import syrah from '../../assets/wines/syrah.png';
 import pinotnoir from '../../assets/wines/pinotnoir.png';
@@ -11,16 +12,19 @@ import '../../App.css';
 
 const Cosecha = () => {
   return (
-    <>
+    <div className="h-screen font-poppins bg-white">
+      <div className="h-[6.5%] flex w-full shadow">
+        <p className="text-[24px] font-medium ml-4 my-auto">Cosecha</p>
+      </div>
       <Swiper
-        className="mySwiper2 h-screen font-poppins"
+        className="mySwiper2 "
         spaceBetween={0}
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Navigation]}
       >
-        <SwiperSlide className="bg-white h-screen flex font-poppins">
+        <SwiperSlide className=" h-screen flex">
           <Swiper
             className="mySwiper swiper-v h-screen w-full"
             spaceBetween={0}
@@ -30,9 +34,6 @@ const Cosecha = () => {
             }}
           >
             <SwiperSlide className="h-full">
-              <div className="h-14 flex w-full shadow">
-                <p className="text-[24px] font-medium ml-4 my-auto">Cosecha</p>
-              </div>
               <div className="w-11/12 h-[90%] mx-auto flex flex-col justify-evenly">
                 <p className="text-[12px] italic font-light text-center">
                   Conocé y accedé a los productos más exclusivos de Elefante
@@ -102,9 +103,6 @@ const Cosecha = () => {
             }}
           >
             <SwiperSlide className="h-full">
-              <div className="h-14 flex w-full shadow">
-                <p className="text-[24px] font-medium ml-4 my-auto">Cosecha</p>
-              </div>
               <div className="w-11/12 h-[90%] mx-auto flex flex-col justify-evenly">
                 <p className="text-[12px] italic font-light text-center">
                   Conocé y accedé a los productos más exclusivos de Elefante
@@ -120,7 +118,7 @@ const Cosecha = () => {
                 >
                   Mint
                 </a>
-                <img src={pinotnoir} alt="syrah" className="h-[460px]"></img>
+                <img src={pinotnoir} alt="syrah"></img>
                 <p className="text-[12px] w-6/12 mx-auto text-center">
                   “Este vino es la prueba de que el amor lo puede todo”
                 </p>
@@ -173,9 +171,6 @@ const Cosecha = () => {
             }}
           >
             <SwiperSlide className="h-full">
-              <div className="h-14 flex w-full shadow">
-                <p className="text-[24px] font-medium ml-4 my-auto">Cosecha</p>
-              </div>
               <div className="w-11/12 h-[90%] mx-auto flex flex-col justify-evenly">
                 <p className="text-[12px] italic font-light text-center">
                   Conocé y accedé a los productos más exclusivos de Elefante
@@ -234,7 +229,7 @@ const Cosecha = () => {
           </Swiper>
         </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 };
 

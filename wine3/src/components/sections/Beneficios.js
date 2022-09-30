@@ -17,7 +17,7 @@ const Beneficios = () => {
           </p>
         </div>
         <div className="flex flex-col h-full justify-evenly">
-          <div className="bg-lightGrey rounded-[19px] text-darkGrey p-5">
+          <div className="bg-lightGrey rounded-[19px] text-darkGrey p-5 mx-5 shadow">
             <div className="flex">
               <p className="mr-2 font-light text-[24px]">Beneficio I </p>
               <p className="font-medium text-[24px]">| White List</p>
@@ -28,7 +28,7 @@ const Beneficios = () => {
               exclusivas.
             </p>
           </div>
-          <div className="bg-lightGrey rounded-[19px] text-darkGrey p-5">
+          <div className="bg-lightGrey rounded-[19px] text-darkGrey p-5 mx-5 shadow">
             <div className="flex">
               <p className="mr-2 font-light text-[24px]">Beneficio II </p>
               <p className="font-medium text-[24px]"> | Visitas</p>
@@ -39,7 +39,7 @@ const Beneficios = () => {
               física.
             </p>
           </div>
-          <div className="bg-lightGrey rounded-[19px] text-darkGrey p-5">
+          <div className="bg-lightGrey rounded-[19px] text-darkGrey p-5 mx-5 shadow">
             <div className="flex">
               <p className="mr-2 font-light text-[24px]">Beneficio III </p>
               <p className="font-medium text-[24px]"> | Catas</p>

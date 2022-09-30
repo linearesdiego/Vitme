@@ -54,13 +54,13 @@ const Nav = () => {
             {showLote && (
               <div className="bg-[#4E4E4E] font-poppins font-light text-[16px] text-white">
                 <div className="w-full pl-[20px] py-[15px]">
-                  <Link to={'/lote'}>Pinot Noir</Link>
+                  <Link to={'/cosecha'}>Pinot Noir</Link>
                 </div>
                 <div className="w-full pl-[20px] py-[15px]">
-                  <Link to={'/lote'}>Syrah</Link>
+                  <Link to={'/cosecha'}>Syrah</Link>
                 </div>
                 <div className="w-full pl-[20px] py-[15px]">
-                  <Link to={'/lote'}>Blend</Link>
+                  <Link to={'/cosecha'}>Blend</Link>
                 </div>
               </div>
             )}
