@@ -7,6 +7,7 @@ import 'swiper/css';
 const Equipo = () => {
   return (
     <Swiper
+      id="equipo"
       className="mySwiper2 h-screen"
       spaceBetween={0}
       pagination={{
