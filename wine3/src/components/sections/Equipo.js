@@ -19,7 +19,7 @@ const Equipo = () => {
       }}
       modules={[Pagination]}
     >
-      <SwiperSlide className="bg-red-500 h-screen flex font-poppins">
+      <SwiperSlide className=" h-screen flex font-poppins">
         <Swiper
           className="mySwiper h-screen w-full"
           spaceBetween={0}
@@ -33,36 +33,32 @@ const Equipo = () => {
             </div>
             <div className="flex flex-col justify-evenly">
               <div>
-                <p className="text-[16px]">
+                <p className="text-[16px] p-5	 pb-14">
                   Buscamos conectar a las bodegas locales con el mundo entero, a
                   través del uso de la tecnología blockchain. Para lograr este
                   cometido hemos reunido el siguiente equipo de profesionales
                 </p>
               </div>
               <div className="h-full">
-                <div className="bg-gray-200 m-5 rounded-lg flex items-center">
+                <div className=" equipo ">
                   <div>
-                    <img
-                      src={federico}
-                      alt="federico"
-                      className="rounded-xlinline-block rounded-full"
-                    />
-                  </div>
-                  <div>
-                    <h2>Federico Marino</h2>
+                    <img src={federico} alt="federico" className=" rounded-xlinline-block rounded-full"/>
+                  </div >
+                  <div className='equipo-texto'>
+                    <h2>Federico <strong>Marino</strong></h2>
                     <p>Co Founder</p>
-                    <div className="flex flex-row">
-                      <div className="bg-gray-400">
+                    <div className=" equipo-iconos">
+                      <div className="equipo-iconos-icon">
                         <img src={linkedin} alt="linkedin" />
                       </div>
-                      <div className="bg-gray-400">
+                      <div className="equipo-iconos-icon">
                         <img src={twitter} alt="twitter" />
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-gray-200 m-5 rounded-lg flex items-center">
+                <div className=" equipo ">
                   <div>
                     <img
                       src={rodrigo}
@@ -70,21 +66,21 @@ const Equipo = () => {
                       className="rounded-xlinline-block rounded-full"
                     />
                   </div>
-                  <div>
-                    <h2>Rodrigo Dománico</h2>
+                  <div className='equipo-texto'>
+                    <h2>Rodrigo <strong>Dománico</strong></h2>
                     <p>Co Founder</p>
-                    <div className="flex flex-row">
-                      <div className="bg-gray-400">
+                    <div className=" equipo-iconos">
+                      <div className="equipo-iconos-icon">
                         <img src={linkedin} alt="linkedin" />
                       </div>
-                      <div className="bg-gray-400">
+                      <div className="equipo-iconos-icon">
                         <img src={twitter} alt="twitter" />
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-gray-200 m-5 rounded-lg flex items-center">
+                <div className=" equipo ">
                   <div>
                     <img
                       src={kevin}
@@ -92,14 +88,14 @@ const Equipo = () => {
                       className="rounded-xlinline-block rounded-full"
                     />
                   </div>
-                  <div>
-                    <h2>Kevin Willenberg</h2>
+                  <div className='equipo-texto'>
+                    <h2>Kevin <strong>Willenberg</strong></h2>
                     <p>Co Founder</p>
-                    <div className="flex flex-row">
-                      <div className="bg-gray-400">
+                    <div className=" equipo-iconos">
+                      <div className="equipo-iconos-icon">
                         <img src={linkedin} alt="linkedin" />
                       </div>
-                      <div className="bg-gray-400">
+                      <div className="equipo-iconos-icon">
                         <img src={twitter} alt="twitter" />
                       </div>
                     </div>
@@ -114,83 +110,66 @@ const Equipo = () => {
             </div>
             <div className="flex flex-col justify-evenly">
               <div>
-                <p className="text-[16px]">
+                <p className="text-[16px] p-5	 pb-14">
                   Buscamos conectar a las bodegas locales con el mundo entero, a
                   través del uso de la tecnología blockchain. Para lograr este
                   cometido hemos reunido el siguiente equipo de profesionales
                 </p>
               </div>
               <div className="h-full">
-                <div className="flex flex-row">
-                  <div className="bg-gray-200 m-5 flex-col">
-                    <img
-                      src={federico}
-                      alt="federico"
-                      className="rounded-xlinline-block rounded-full"
-                    />
-                    <h2>Federico Marino</h2>
+              <div className="equipo2">
+                  <div className="equipo2-tarjeta">
+                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
+                    <h2>Federico <strong>Marino</strong></h2>
                     <p>Co Founder</p>
-                    <img src={linkedin} alt="linkedin" />
+                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
                   </div>
 
-                  <div className="bg-gray-200 m-5 flex-col">
-                    <img
-                      src={federico}
-                      alt="federico"
-                      className="rounded-xlinline-block rounded-full"
-                    />
-                    <h2>Federico Marino</h2>
+                  <div className="equipo2-tarjeta">
+                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
+                    <h2>Federico <strong>Marino</strong></h2>
                     <p>Co Founder</p>
-                    <img src={linkedin} alt="linkedin" />
+                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
                   </div>
+ 
                 </div>
 
-                <div className="flex flex-row">
-                  <div className="bg-gray-200 m-5 flex-col">
-                    <img
-                      src={federico}
-                      alt="federico"
-                      className="rounded-xlinline-block rounded-full"
-                    />
-                    <h2>Federico Marino</h2>
+                <div className="equipo2">
+                  <div className="equipo2-tarjeta">
+                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
+                    <h2>Federico <strong>Marino</strong></h2>
                     <p>Co Founder</p>
-                    <img src={linkedin} alt="linkedin" />
+                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
                   </div>
 
-                  <div className="bg-gray-200 m-5 flex-col">
-                    <img
-                      src={federico}
-                      alt="federico"
-                      className="rounded-xlinline-block rounded-full"
-                    />
-                    <h2>Federico Marino</h2>
+                  <div className="equipo2-tarjeta">
+                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
+                    <h2>Federico <strong>Marino</strong></h2>
                     <p>Co Founder</p>
-                    <img src={linkedin} alt="linkedin" />
+                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
                   </div>
+ 
                 </div>
-                <div className="flex flex-row">
-                  <div className="bg-gray-200 m-5 flex-col">
-                    <img
-                      src={federico}
-                      alt="federico"
-                      className="rounded-xlinline-block rounded-full"
-                    />
-                    <h2>Federico Marino</h2>
+
+                <div className="equipo2">
+                  <div className="equipo2-tarjeta">
+                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
+                    <h2>Federico <strong>Marino</strong></h2>
                     <p>Co Founder</p>
-                    <img src={linkedin} alt="linkedin" />
+                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
                   </div>
 
-                  <div className="bg-gray-200 m-5 flex-col">
-                    <img
-                      src={federico}
-                      alt="federico"
-                      className="rounded-xlinline-block rounded-full"
-                    />
-                    <h2>Federico Marino</h2>
+                  <div className="equipo2-tarjeta">
+                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
+                    <h2>Federico <strong>Marino</strong></h2>
                     <p>Co Founder</p>
-                    <img src={linkedin} alt="linkedin" />
+                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
                   </div>
+ 
                 </div>
+
+ 
+ 
               </div>
             </div>
           </SwiperSlide>

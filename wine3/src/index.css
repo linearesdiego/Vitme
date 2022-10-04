@@ -14,3 +14,119 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.fondo {
+  background-image: url(./assets/elefante/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fondo1 {
+  background-image: url(./assets/elefante/background1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fondo2 {
+  background-image: url(./assets/elefante/background2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.equipo{
+  background: #F2F2F2;
+  border-radius: 19px;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  height: 141px;
+}
+
+.equipo-texto{
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+.equipo-texto h2{
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.equipo-texto p{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.equipo-iconos{
+  margin-top: 25px;
+  display: flex;
+}
+
+.equipo-iconos-icon{
+  padding: 4px 2px;
+  background: #E0E0E0;
+  border-radius: 6px;
+  width: 74px;
+  height: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.equipo2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.equipo2-tarjeta{
+  background: #F2F2F2;
+  border-radius: 10px;
+  width: 160px;
+  height: 146px;
+  padding: 5px 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.equipo2-tarjeta h2{
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.equipo2-tarjeta p{
+  font-weight: 275;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.equipo2-img{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 5px;
+  width: 40px;
+}
+
+.equipo2-icon{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 5px;
+}

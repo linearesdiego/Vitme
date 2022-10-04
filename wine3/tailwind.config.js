@@ -15,6 +15,12 @@ module.exports = {
         height: {
           '55/6': '90%',
         },
+
+        backgroundImage: {
+          // 'fondo1': "url('./src/assets/elefante/background.png')",
+          // 'footer-texture': "url('/img/footer-texture.png')",
+        }
+
       },
     },
     fontFamily: {
