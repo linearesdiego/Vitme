@@ -3,11 +3,16 @@ import wineshero from '../../assets/wineshero.png';
 import discord from '../../assets/icons/discord.png';
 import twitter from '../../assets/icons/twitter.png';
 import telegram from '../../assets/icons/telegram.png';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper';
+
 const Hero = () => {
   return (
     <div className="bg-white h-screen flex font-poppins md:h-[93.3%]">
       <div className="w-11/12 h-full m-auto pt-24 md:flex">
-        <div className=" md:w-full md:flex md:flex-col justify-between">
+        <div className=" md:w-6/12 md:flex md:flex-col justify-between">
           <div>
             <p className="text-[48px] font-black md:text-[64px]">Wine3</p>
             <p className="text-[16px] font-extralight -mt-3 md:text-[24px]">
@@ -57,12 +62,30 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="w-full flex">
+        <div className="w-6/12 bg-red-500">
+          <Swiper
+            slidesPerView={1.5}
+            spaceBetween={0}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper h-full bg-white "
+          >
+            <SwiperSlide className="bg-red-500">Slide 1</SwiperSlide>
+            <SwiperSlide className="bg-red-600">Slide 2</SwiperSlide>
+            <SwiperSlide className="bg-red-700">Slide 3</SwiperSlide>
+          </Swiper>
+          {/*
           <img
             src={wineshero}
             alt="wine"
             className="md:h-[800px] mr-auto"
-          ></img>
+              ></img>*/}
         </div>
       </div>
     </div>
