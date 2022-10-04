@@ -6,7 +6,7 @@ import telegram from '../../assets/icons/telegram.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper';
+import { Autoplay, Navigation, Pagination } from 'swiper';
 
 const Hero = () => {
   return (
@@ -62,18 +62,17 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="w-6/12 bg-red-500">
+        <div className="w-full h-full md:w-6/12 bg-red-500">
           <Swiper
-            slidesPerView={1.5}
-            spaceBetween={0}
+            centeredSlides={true}
             autoplay={{
-              delay: 2500,
+              delay: 500,
               disableOnInteraction: false,
             }}
             pagination={{
               clickable: true,
             }}
-            modules={[Pagination]}
+            modules={[Autoplay]}
             className="mySwiper h-full bg-white "
           >
             <SwiperSlide className="bg-red-500">Slide 1</SwiperSlide>
