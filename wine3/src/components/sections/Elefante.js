@@ -23,24 +23,24 @@ const Elefante = () => {
       modules={[Pagination]}
     >
 
-      {/* <SwiperSlide className="h-full">
+      <SwiperSlide className="h-full">
               <div className="h-14 flex w-full shadow ">
                 <p className="text-[24px] font-medium ml-4 my-auto">Elefante Wine</p>
               </div>
-              <div className='flex flex-col justify-evenly h-full fondo1 '>
+              <div className='flex flex-col h-full fondo'>
                 <div>
-                  <p className="text-[16px]">
+                  <p className="text-[16px] mx-10 mt-12 leading-6 h-[400px]">
                   Nace de la unión de una pareja de enamorados y su pasión por los vinos, Felipe y Juliana, son autores de Elefante Wine, una bodega en la que la familia produce sus vinos de forma cien por ciento casera, en el garaje de su hogar.
                   Elefante pone a nuestro alcance productos que han logrado gran prestigio y renombre por la calidad del producto.
                   </p>
                 </div>
-                <div>
+                <div className='mx-10'>
                   <a href="#" className="rounded-[14px] font-semibold text-[20px] py-[10px] px-[60px] bg-black text-white mr-auto" >
                     Conocer más
                   </a>
                 </div>
               </div>
-      </SwiperSlide> */}
+      </SwiperSlide>
       <SwiperSlide className="h-full">
               <div className="h-14 flex w-full shadow ">
                 <p className="text-[24px] font-medium ml-4 my-auto">Historia del nombre</p>
