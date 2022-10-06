@@ -3,14 +3,18 @@ import wineshero from '../../assets/wineshero.png';
 import discord from '../../assets/icons/discord.png';
 import twitter from '../../assets/icons/twitter.png';
 import telegram from '../../assets/icons/telegram.png';
+import syrah from '../../assets/wines/syrah.png';
+import pinotnoir from '../../assets/wines/pinotnoir.png';
+import blend from '../../assets/wines/blend.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Autoplay, Navigation, Pagination } from 'swiper';
+import 'swiper/css/effect-fade';
+import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper';
 
 const Hero = () => {
   return (
-    <div className="bg-white h-screen flex font-poppins md:h-[93.3%]">
+    <div className="bg-white h-screen flex font-poppins">
       <div className="w-11/12 h-full m-auto pt-24 md:flex">
         <div className=" md:w-6/12 md:flex md:flex-col justify-between">
           <div>
@@ -62,11 +66,13 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-full md:w-6/12 bg-red-500">
+        <div className="w-full h-full md:w-6/12">
           <Swiper
+            slidesPerView={3}
+            loop={true}
             centeredSlides={true}
             autoplay={{
-              delay: 500,
+              delay: 1500,
               disableOnInteraction: false,
             }}
             pagination={{
@@ -75,16 +81,56 @@ const Hero = () => {
             modules={[Autoplay]}
             className="mySwiper h-full bg-white "
           >
-            <SwiperSlide className="bg-red-500">Slide 1</SwiperSlide>
-            <SwiperSlide className="bg-red-600">Slide 2</SwiperSlide>
-            <SwiperSlide className="bg-red-700">Slide 3</SwiperSlide>
+            <SwiperSlide className="bg-red-500 flex">
+              {({ isActive }) => (
+                <div
+                  className={
+                    isActive
+                      ? 'w-full h-full m-auto bg-blue-500'
+                      : 'w-full h-4/6 m-auto bg-blue-500'
+                  }
+                >
+                  <img className="bg-red-900" src={blend} alt="blend"></img>
+                  Current slide is {isActive ? 'active' : 'not active'}
+                </div>
+              )}
+            </SwiperSlide>
+            <SwiperSlide className="bg-red-500 flex">
+              {({ isActive }) => (
+                <div
+                  className={
+                    isActive
+                      ? 'w-full h-full m-auto bg-blue-500'
+                      : 'w-full h-4/6 m-auto bg-blue-500'
+                  }
+                >
+                  <img src={syrah} alt="syrah"></img>
+                  Current slide is {isActive ? 'active' : 'not active'}
+                </div>
+              )}
+            </SwiperSlide>
+            <SwiperSlide className="bg-red-500 flex">
+              {({ isActive }) => (
+                <div
+                  className={
+                    isActive
+                      ? 'w-full h-full m-auto bg-blue-500'
+                      : 'w-full h-4/6 m-auto bg-blue-500'
+                  }
+                >
+                  Current slide is {isActive ? 'active' : 'not active'}
+                  <img src={pinotnoir} alt="pinotnoir"></img>
+                </div>
+              )}
+            </SwiperSlide>
           </Swiper>
           {/*
           <img
             src={wineshero}
             alt="wine"
             className="md:h-[800px] mr-auto"
-              ></img>*/}
+          ></img>
+        */}
         </div>
       </div>
     </div>
