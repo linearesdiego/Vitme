@@ -15,8 +15,8 @@ import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper';
 const Hero = () => {
   return (
     <div className="bg-white h-screen flex font-poppins">
-      <div className="w-11/12 h-full m-auto pt-24 md:flex">
-        <div className=" md:w-6/12 md:flex md:flex-col justify-between">
+      <div className="w-11/12 h-full m-auto pt-24 md:flex justify-between">
+        <div className="md:w-5/12 md:flex md:flex-col justify-between">
           <div>
             <p className="text-[48px] font-black md:text-[64px]">Wine3</p>
             <p className="text-[16px] font-extralight -mt-3 md:text-[24px]">
@@ -66,60 +66,60 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-full md:w-6/12">
+        <div className="w-full m-auto h-5/6 md:w-6/12 overflow-visible">
           <Swiper
             slidesPerView={3}
             loop={true}
             centeredSlides={true}
             autoplay={{
-              delay: 1500,
+              delay: 3500,
               disableOnInteraction: false,
             }}
             pagination={{
               clickable: true,
             }}
             modules={[Autoplay]}
-            className="mySwiper h-full bg-white "
+            className="mySwiper h-full overflow-visible"
           >
-            <SwiperSlide className="bg-red-500 flex">
+            <SwiperSlide className="flex overflow-visible">
               {({ isActive }) => (
                 <div
                   className={
-                    isActive
-                      ? 'w-full h-full m-auto bg-blue-500'
-                      : 'w-full h-4/6 m-auto bg-blue-500'
+                    isActive ? 'w-full h-full m-auto' : 'w-full h-4/6 m-auto'
                   }
                 >
-                  <img className="bg-red-900" src={blend} alt="blend"></img>
-                  Current slide is {isActive ? 'active' : 'not active'}
+                  <img src={blend} alt="blend" className="h-5/6"></img>
                 </div>
               )}
             </SwiperSlide>
-            <SwiperSlide className="bg-red-500 flex">
+            <SwiperSlide className="flex overflow-visible">
               {({ isActive }) => (
                 <div
                   className={
-                    isActive
-                      ? 'w-full h-full m-auto bg-blue-500'
-                      : 'w-full h-4/6 m-auto bg-blue-500'
+                    isActive ? 'w-full h-full m-auto' : 'w-full h-4/6 m-auto'
                   }
                 >
-                  <img src={syrah} alt="syrah"></img>
-                  Current slide is {isActive ? 'active' : 'not active'}
+                  <img src={syrah} alt="syrah" className="h-5/6"></img>
                 </div>
               )}
             </SwiperSlide>
-            <SwiperSlide className="bg-red-500 flex">
+            <SwiperSlide className="flex overflow-visible">
               {({ isActive }) => (
                 <div
                   className={
                     isActive
-                      ? 'w-full h-full m-auto bg-blue-500'
-                      : 'w-full h-4/6 m-auto bg-blue-500'
+                      ? 'w-full h-full m-auto overflow-visible'
+                      : 'w-full h-4/6 m-auto'
                   }
                 >
-                  Current slide is {isActive ? 'active' : 'not active'}
-                  <img src={pinotnoir} alt="pinotnoir"></img>
+                  <img src={pinotnoir} alt="pinotnoir" className="h-5/6"></img>
+                  <div
+                    className={
+                      isActive
+                        ? 'bg-black h-3 w-4/6 rounded-full blur-xl'
+                        : 'bg-black h-3 w-3/6 ml-2 rounded-full blur-xl'
+                    }
+                  ></div>
                 </div>
               )}
             </SwiperSlide>

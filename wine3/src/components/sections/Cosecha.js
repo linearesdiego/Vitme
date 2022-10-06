@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from 'swiper';
+import { Pagination, Navigation, Autoplay } from 'swiper';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css';
@@ -12,12 +12,135 @@ import '../../App.css';
 
 const Cosecha = () => {
   return (
-    <div className="h-screen font-poppins bg-white">
-      <div className="h-[6.5%] flex w-full shadow">
+    <div className="h-screen font-poppins">
+      <div className="h-[6.5%] flex w-full shadow md:hidden">
         <p className="text-[24px] font-medium ml-4 my-auto">Cosecha</p>
       </div>
+      <div className="h-screen w-11/12 mx-auto">
+        <Swiper
+          slidesPerView={3}
+          loop={true}
+          centeredSlides={true}
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Autoplay]}
+          className="mySwiper h-full w-9/12"
+        >
+          <SwiperSlide className="flex w-full">
+            {({ isActive }) => (
+              <div
+                className={
+                  isActive
+                    ? 'w-fit h-4/6 mt-32 m-auto'
+                    : 'w-fit h-2/6 mt-60 m-auto'
+                }
+              >
+                <div className="h-[88%]">
+                  <img
+                    src={pinotnoir}
+                    alt="syrah"
+                    className="h-5/6 mx-auto"
+                  ></img>
+                  <p
+                    className={
+                      isActive
+                        ? 'font-black text-[48px] mt-5 text-center'
+                        : 'font-black text-[40px] mt-5 text-center'
+                    }
+                  >
+                    Pinot Noir
+                  </p>
+                </div>
+                <div
+                  className={
+                    isActive ? 'flex flex-col justify-around h-[12%]' : 'hidden'
+                  }
+                >
+                  <p>De la tierra del sol y del buen vino</p>
+                  <button className="bg-black py-2 px-10 w-fit text-[24px] m-auto font-semibold text-white rounded-[14px]">
+                    Mint
+                  </button>
+                </div>
+              </div>
+            )}
+          </SwiperSlide>
+          <SwiperSlide className="flex w-full">
+            {({ isActive }) => (
+              <div
+                className={
+                  isActive
+                    ? 'w-fit h-4/6 mt-32 m-auto'
+                    : 'w-fit h-2/6 mt-60 m-auto'
+                }
+              >
+                <div className="h-[88%]">
+                  <img src={blend} alt="syrah" className="h-5/6 mx-auto"></img>
+                  <p
+                    className={
+                      isActive
+                        ? 'font-black text-[48px] mt-5 text-center'
+                        : 'font-black text-[40px] mt-5 text-center'
+                    }
+                  >
+                    Blend
+                  </p>
+                </div>
+                <div
+                  className={
+                    isActive ? 'flex flex-col justify-around h-[12%]' : 'hidden'
+                  }
+                >
+                  <p>De la tierra del sol y del buen vino</p>
+                  <button className="bg-black py-2 px-10 w-fit text-[24px] m-auto font-semibold text-white rounded-[14px]">
+                    Mint
+                  </button>
+                </div>
+              </div>
+            )}
+          </SwiperSlide>
+          <SwiperSlide className="flex w-full">
+            {({ isActive }) => (
+              <div
+                className={
+                  isActive
+                    ? 'w-fit h-4/6 my-auto bg-red-500 w-full'
+                    : 'w-fit h-2/6 m-auto'
+                }
+              >
+                <div className="h-[88%]">
+                  <img src={syrah} alt="syrah" className="h-5/6 mx-auto"></img>
+                  <p
+                    className={
+                      isActive
+                        ? 'font-black text-[48px] mt-5 text-center'
+                        : 'font-black text-[40px] mt-5 text-center'
+                    }
+                  >
+                    Syrah
+                  </p>
+                </div>
+                <div
+                  className={
+                    isActive ? 'flex flex-col justify-around h-[12%]' : 'hidden'
+                  }
+                >
+                  <p>De la tierra del sol y del buen vino</p>
+                  <button className="bg-black py-2 px-10 w-fit text-[24px] m-auto font-semibold text-white rounded-[14px]">
+                    Mint
+                  </button>
+                </div>
+              </div>
+            )}
+          </SwiperSlide>
+        </Swiper>
+      </div>
       <Swiper
-        className="mySwiper2 "
+        className="mySwiper2 md:hidden"
         spaceBetween={0}
         pagination={{
           clickable: true,
