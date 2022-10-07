@@ -12,11 +12,18 @@ import '../../App.css';
 
 const Cosecha = () => {
   return (
-    <div className="h-screen font-poppins">
+    <div className="h-screen font-poppins pt-[0%] md:pt-[7%] lg:pt-[5%] xl:pt-[3%]">
       <div className="h-[6.5%] flex w-full shadow md:hidden">
         <p className="text-[24px] font-medium ml-4 my-auto">Cosecha</p>
       </div>
-      <div className="h-screen w-11/12 mx-auto">
+      <div className="h-screen w-11/12 mx-auto hidden md:block ">
+        <div className="max-w-[485px] absolute mt-5">
+          <p className="font-medium text-[40px]">Cosecha</p>
+          <p className="font-light text-[24px]">
+            Conocé y accedé a los productos más exclusivos de
+            <span className="italic"> Elefante Wine</span>
+          </p>
+        </div>
         <Swiper
           slidesPerView={3}
           loop={true}
@@ -29,28 +36,26 @@ const Cosecha = () => {
             clickable: true,
           }}
           modules={[Autoplay]}
-          className="mySwiper h-full w-9/12"
+          className="mySwiper h-full w-12/12 lg:w-9/12"
         >
           <SwiperSlide className="flex w-full">
             {({ isActive }) => (
               <div
                 className={
-                  isActive
-                    ? 'w-fit h-4/6 mt-32 m-auto'
-                    : 'w-fit h-2/6 mt-60 m-auto'
+                  isActive ? 'h-5/6 my-auto w-full' : 'w-fit h-2/6 m-auto'
                 }
               >
-                <div className="h-[88%]">
+                <div className="h-[88%] flex flex-col">
                   <img
                     src={pinotnoir}
                     alt="syrah"
-                    className="h-5/6 mx-auto"
+                    className="h-4/6 m-auto"
                   ></img>
                   <p
                     className={
                       isActive
-                        ? 'font-black text-[48px] mt-5 text-center'
-                        : 'font-black text-[40px] mt-5 text-center'
+                        ? 'font-black text-[48px] mb-auto text-center'
+                        : 'font-black text-[40px] mb-auto text-center'
                     }
                   >
                     Pinot Noir
@@ -61,8 +66,10 @@ const Cosecha = () => {
                     isActive ? 'flex flex-col justify-around h-[12%]' : 'hidden'
                   }
                 >
-                  <p>De la tierra del sol y del buen vino</p>
-                  <button className="bg-black py-2 px-10 w-fit text-[24px] m-auto font-semibold text-white rounded-[14px]">
+                  <p className="text-center">
+                    De la tierra del sol y del buen vino
+                  </p>
+                  <button className="bg-black py-2 px-10 w-fit text-[24px] mt-5 m-auto font-semibold text-white rounded-[14px]">
                     Mint
                   </button>
                 </div>
@@ -73,18 +80,16 @@ const Cosecha = () => {
             {({ isActive }) => (
               <div
                 className={
-                  isActive
-                    ? 'w-fit h-4/6 mt-32 m-auto'
-                    : 'w-fit h-2/6 mt-60 m-auto'
+                  isActive ? 'h-5/6 my-auto w-full' : 'w-fit h-2/6 m-auto'
                 }
               >
-                <div className="h-[88%]">
-                  <img src={blend} alt="syrah" className="h-5/6 mx-auto"></img>
+                <div className="h-[88%] flex flex-col">
+                  <img src={blend} alt="syrah" className="h-4/6 m-auto"></img>
                   <p
                     className={
                       isActive
-                        ? 'font-black text-[48px] mt-5 text-center'
-                        : 'font-black text-[40px] mt-5 text-center'
+                        ? 'font-black text-[48px] mb-auto text-center'
+                        : 'font-black text-[40px] mb-auto text-center'
                     }
                   >
                     Blend
@@ -95,8 +100,10 @@ const Cosecha = () => {
                     isActive ? 'flex flex-col justify-around h-[12%]' : 'hidden'
                   }
                 >
-                  <p>De la tierra del sol y del buen vino</p>
-                  <button className="bg-black py-2 px-10 w-fit text-[24px] m-auto font-semibold text-white rounded-[14px]">
+                  <p className="text-center">
+                    De la tierra del sol y del buen vino
+                  </p>
+                  <button className="bg-black py-2 px-10 w-fit text-[24px] mt-5 m-auto font-semibold text-white rounded-[14px]">
                     Mint
                   </button>
                 </div>
@@ -107,18 +114,16 @@ const Cosecha = () => {
             {({ isActive }) => (
               <div
                 className={
-                  isActive
-                    ? 'w-fit h-4/6 my-auto bg-red-500 w-full'
-                    : 'w-fit h-2/6 m-auto'
+                  isActive ? 'h-5/6 my-auto w-full' : 'w-fit h-2/6 m-auto'
                 }
               >
-                <div className="h-[88%]">
-                  <img src={syrah} alt="syrah" className="h-5/6 mx-auto"></img>
+                <div className="h-[88%] flex flex-col">
+                  <img src={syrah} alt="syrah" className="h-4/6 m-auto"></img>
                   <p
                     className={
                       isActive
-                        ? 'font-black text-[48px] mt-5 text-center'
-                        : 'font-black text-[40px] mt-5 text-center'
+                        ? 'font-black text-[48px] mb-auto text-center'
+                        : 'font-black text-[40px] mb-auto text-center'
                     }
                   >
                     Syrah
@@ -129,8 +134,10 @@ const Cosecha = () => {
                     isActive ? 'flex flex-col justify-around h-[12%]' : 'hidden'
                   }
                 >
-                  <p>De la tierra del sol y del buen vino</p>
-                  <button className="bg-black py-2 px-10 w-fit text-[24px] m-auto font-semibold text-white rounded-[14px]">
+                  <p className="text-center">
+                    De la tierra del sol y del buen vino
+                  </p>
+                  <button className="bg-black py-2 px-10 w-fit text-[24px] mt-5 m-auto font-semibold text-white rounded-[14px]">
                     Mint
                   </button>
                 </div>
