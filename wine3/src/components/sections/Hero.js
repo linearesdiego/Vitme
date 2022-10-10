@@ -1,8 +1,8 @@
 import React from 'react';
 import wineshero from '../../assets/wineshero.png';
-import discord from '../../assets/icons/discord.png';
-import twitter from '../../assets/icons/twitter.png';
-import telegram from '../../assets/icons/telegram.png';
+import discordB from '../../assets/icons/discordB.png';
+import twitterB from '../../assets/icons/twitterB.png';
+import telegramB from '../../assets/icons/telegramB.png';
 import syrah from '../../assets/wines/syrah.png';
 import pinotnoir from '../../assets/wines/pinotnoir.png';
 import blend from '../../assets/wines/blend.png';
@@ -31,12 +31,12 @@ const Hero = () => {
               <p className="mx-auto font-poppins font-light text-[24px] text-black">
                 Únete a nosotros
               </p>
-              <div className="w-full flex justify-around">
+              <div className="w-full flex justify-around gap-2">
                 <div className="flex flex-col">
                   <img
-                    src={discord}
+                    src={discordB}
                     alt="discord"
-                    className="w-[25px] m-auto mt-5 mb-2"
+                    className="m-auto mt-5 mb-2 max-h-[25px]"
                   ></img>
                   <p className="font-poppins text-black font-light text-[16px]">
                     discord
@@ -44,9 +44,9 @@ const Hero = () => {
                 </div>
                 <div className="flex flex-col">
                   <img
-                    src={twitter}
+                    src={twitterB}
                     alt="twitter"
-                    className="w-[25px] m-auto mt-5 mb-2"
+                    className="m-auto mt-5 mb-2 max-h-[25px]"
                   ></img>
                   <p className="font-poppins text-black font-light text-[16px]">
                     twitter
@@ -54,9 +54,9 @@ const Hero = () => {
                 </div>
                 <div className="flex flex-col">
                   <img
-                    src={telegram}
+                    src={telegramB}
                     alt="telegram"
-                    className="w-[25px] m-auto mt-5 mb-2"
+                    className="m-auto mt-5 mb-2 max-h-[25px]"
                   ></img>
                   <p className="font-poppins text-black font-light text-[16px]">
                     telegram
@@ -89,6 +89,11 @@ const Hero = () => {
                   }
                 >
                   <img src={blend} alt="blend" className="h-5/6"></img>
+                  <div
+                    className={
+                      isActive && 'bg-black h-3 w-4/6 rounded-full blur-xl'
+                    }
+                  ></div>
                 </div>
               )}
             </SwiperSlide>
@@ -100,6 +105,11 @@ const Hero = () => {
                   }
                 >
                   <img src={syrah} alt="syrah" className="h-5/6"></img>
+                  <div
+                    className={
+                      isActive && 'bg-black h-3 w-4/6 rounded-full blur-xl'
+                    }
+                  ></div>
                 </div>
               )}
             </SwiperSlide>
@@ -115,9 +125,7 @@ const Hero = () => {
                   <img src={pinotnoir} alt="pinotnoir" className="h-5/6"></img>
                   <div
                     className={
-                      isActive
-                        ? 'bg-black h-3 w-4/6 rounded-full blur-xl'
-                        : 'bg-black h-3 w-3/6 ml-2 rounded-full blur-xl'
+                      isActive && 'bg-black h-3 w-4/6 rounded-full blur-xl'
                     }
                   ></div>
                 </div>
