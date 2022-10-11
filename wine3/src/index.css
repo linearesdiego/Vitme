@@ -130,19 +130,3 @@ code {
   align-items: center;
   padding: 0px 0px 5px;
 }
-
-.swiper-container {
-  width: 480px;
-}
-
-@media screen and (min-width: 0px) {
-  .swiper-container {
-    width: 0px;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  .swiper-container {
-    width: 375px;
-  }
-}
