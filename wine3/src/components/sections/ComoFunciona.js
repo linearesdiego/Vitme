@@ -2,7 +2,10 @@ import React from 'react';
 
 const ComoFunciona = () => {
   return (
-    <div className="bg-white h-screen flex flex-col font-poppins">
+    <div
+      id="comofunciona"
+      className="bg-white h-screen flex flex-col font-poppins"
+    >
       <div className="h-[6.5%] flex w-full shadow">
         <p className="text-[24px] font-medium ml-4 my-auto">¿Como funciona?</p>
       </div>

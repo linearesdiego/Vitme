@@ -48,7 +48,7 @@ const Nav = () => {
         >
           <div>
             <div className="w-full p-[20px] border-b-[0.5px] font-poppins font-medium text-[16px] text-white">
-              <Link to={'/comofunciona'}>¿Cómo funciona?</Link>
+              <a href="#comofunciona">¿Cómo funciona?</a>
             </div>
             <div className="w-full border-b-[0.5px] font-poppins font-medium text-[16px] text-white">
               <div className="flex justify-between p-[20px]">
@@ -74,13 +74,13 @@ const Nav = () => {
               {showLote && (
                 <div className="bg-[#4E4E4E] font-poppins font-light text-[16px] text-white">
                   <div className="w-full pl-[20px] py-[15px]">
-                    <Link to={'/cosecha'}>Pinot Noir</Link>
+                    <a href="#pinotnoir">Pinot Noir</a>
                   </div>
                   <div className="w-full pl-[20px] py-[15px]">
-                    <Link to={'/cosecha'}>Syrah</Link>
+                    <a href="#syrah">Syrah</a>
                   </div>
                   <div className="w-full pl-[20px] py-[15px]">
-                    <Link to={'/cosecha'}>Blend</Link>
+                    <a href="#blend">Blend</a>
                   </div>
                 </div>
               )}
@@ -123,7 +123,6 @@ const Nav = () => {
             </div>
             <div className="w-full p-[20px] border-b-[0.5px] font-poppins font-medium text-[16px] text-white">
               <a href="#equipo">El equipo</a>
-              {/*<Link to={'/elequipo'}>El equipo</Link>*/}
             </div>
           </div>
           <div className="w-full flex flex-col">
@@ -169,7 +168,7 @@ const Nav = () => {
           onClick={() => {
             setShowMenu(!showMenu);
           }}
-          className="flex flex-col justify-between h-[15px] w-[25.88px] my-auto ml-auto mr-5"
+          className="flex flex-col justify-between h-[15px] w-[25.88px] my-auto ml-auto mr-5 bg-white"
         >
           <div className="h-[3px] bg-black w-full"></div>
           <div className="ml-auto h-[3px] bg-black w-7/12"></div>

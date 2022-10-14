@@ -15,14 +15,14 @@ import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper';
 const Hero = () => {
   return (
     <div className="bg-white h-screen flex font-poppins">
-      <div className="w-11/12 h-full m-auto pt-24 md:flex justify-between">
-        <div className="md:w-5/12 md:flex md:flex-col justify-between">
-          <div>
+      <div className="w-11/12 h-[93.5%] mx-auto mt-auto md:flex justify-between">
+        <div className="md:w-5/12 md:flex md:flex-col justify-between h-[20%] md:h-full">
+          <div className="flex flex-col h-full md:h-fit">
             <p className="text-[48px] font-black md:text-[64px]">Wine3</p>
             <p className="text-[16px] font-extralight -mt-3 md:text-[24px]">
               El vino, el sol y el futuro
             </p>
-            <button className="bg-black mt-[35px] py-[10px] px-[15px] rounded-[14px] text-white text-[16px] font-semibold md:text-[24px]">
+            <button className="bg-black py-[10px] px-[15px] rounded-[14px] w-fit mt-auto md:mt-[35px] text-white text-[16px] font-semibold md:text-[24px]">
               Compra en Open Sea
             </button>
           </div>
@@ -66,7 +66,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="w-full m-auto h-5/6 md:w-6/12 overflow-visible">
+        <div className="w-full m-auto h-[80%] md:w-6/12 overflow-visible">
           <Swiper
             slidesPerView={3}
             loop={true}
@@ -85,26 +85,12 @@ const Hero = () => {
               {({ isActive }) => (
                 <div
                   className={
-                    isActive ? 'w-full h-full m-auto' : 'w-full h-4/6 m-auto'
+                    isActive
+                      ? 'z-50 md:h-[80%] m-auto'
+                      : 'z-30 w-[60%] md:h-[55%]  m-auto'
                   }
                 >
-                  <img src={blend} alt="blend" className="h-5/6"></img>
-                  <div
-                    className={
-                      isActive && 'bg-black h-3 w-4/6 rounded-full blur-xl'
-                    }
-                  ></div>
-                </div>
-              )}
-            </SwiperSlide>
-            <SwiperSlide className="flex overflow-visible">
-              {({ isActive }) => (
-                <div
-                  className={
-                    isActive ? 'w-full h-full m-auto' : 'w-full h-4/6 m-auto'
-                  }
-                >
-                  <img src={syrah} alt="syrah" className="h-5/6"></img>
+                  <img src={blend} alt="blend" className="md:h-full"></img>
                   <div
                     className={
                       isActive && 'bg-black h-3 w-4/6 rounded-full blur-xl'
@@ -118,11 +104,33 @@ const Hero = () => {
                 <div
                   className={
                     isActive
-                      ? 'w-full h-full m-auto overflow-visible'
-                      : 'w-full h-4/6 m-auto'
+                      ? 'z-50 md:h-[80%] m-auto'
+                      : 'z-30 w-[60%] md:h-[55%]  m-auto'
                   }
                 >
-                  <img src={pinotnoir} alt="pinotnoir" className="h-5/6"></img>
+                  <img src={syrah} alt="syrah" className="md:h-full"></img>
+                  <div
+                    className={
+                      isActive && 'bg-black h-3 w-4/6 rounded-full blur-xl'
+                    }
+                  ></div>
+                </div>
+              )}
+            </SwiperSlide>
+            <SwiperSlide className="flex overflow-visible">
+              {({ isActive }) => (
+                <div
+                  className={
+                    isActive
+                      ? 'z-50 md:h-[80%] m-auto'
+                      : 'z-30 w-[60%] md:h-[55%]  m-auto'
+                  }
+                >
+                  <img
+                    src={pinotnoir}
+                    alt="pinotnoir"
+                    className="md:h-full"
+                  ></img>
                   <div
                     className={
                       isActive && 'bg-black h-3 w-4/6 rounded-full blur-xl'

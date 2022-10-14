@@ -33,7 +33,7 @@ const Home = () => {
         <SwiperSlide>
           <Hero />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide id="comofunciona">
           <ComoFunciona />
         </SwiperSlide>
         <SwiperSlide>

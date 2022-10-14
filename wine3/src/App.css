@@ -5,6 +5,10 @@
   margin: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* 
 .swiper-pagination-bullet {
   background-color: #fbfbfb !important;
