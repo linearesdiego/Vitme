@@ -12,24 +12,44 @@ const Nav = () => {
   return (
     <div>
       <div className="h-[65px] hidden md:flex shadow-md z-50 absolute top-0 left-0 w-full bg-white">
-        <div className="font-poppins text-[20px] my-auto ml-auto mr-10">
-          <Link to={'/comofunciona'} className="border-r-2 border-grey px-5">
+        <div className="font-poppins text-[20px] my-auto ml-auto mr-10 flex">
+          <a
+            href="#comofunciona"
+            className="border-r-2 border-r-grey px-5 border-b-2 border-white hover:border-b-2 hover:border-black transition duration-150"
+          >
             ¿Cómo funciona?
-          </Link>
-          <Link to={'/comofunciona'} className="border-r-2 border-grey px-5">
-            Lote Exclusivo
-          </Link>
-          <Link to={'/comofunciona'} className="border-r-2 border-grey px-5">
+          </a>
+
+          <a
+            href="#cosecha"
+            className="border-r-2 border-r-grey px-5 border-b-2 border-white hover:border-b-2 hover:border-black transition duration-150"
+          >
+            Cosecha
+          </a>
+
+          <a
+            href="#beneficios"
+            className="border-r-2 border-r-grey px-5 border-b-2 border-white hover:border-b-2 hover:border-black transition duration-150"
+          >
             Beneficios
-          </Link>
-          <Link to={'/comofunciona'} className="border-r-2 border-grey px-5">
+          </a>
+
+          <a
+            href="#elefante"
+            className="border-r-2 border-r-grey px-5 border-b-2 border-white hover:border-b-2 hover:border-black transition duration-150"
+          >
             Elefante Wine
-          </Link>
-          <Link to={'/comofunciona'} className="px-5">
+          </a>
+
+          <a
+            href="#equipo"
+            className="px-5 border-b-2 border-white hover:border-b-2 hover:border-black transition duration-150"
+          >
             El equipo
-          </Link>
+          </a>
         </div>
       </div>
+
       <div className="md:hidden absolute top-0 left-0 w-screen z-40 h-[55px] flex">
         {showMenu && (
           <button
