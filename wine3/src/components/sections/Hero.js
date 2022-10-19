@@ -18,11 +18,11 @@ const Hero = () => {
       <div className="w-11/12 h-[93.5%] mx-auto mt-auto md:flex justify-between">
         <div className="md:w-5/12 md:flex md:flex-col justify-between h-[20%] md:h-full">
           <div className="flex flex-col h-full md:h-fit">
-            <p className="text-[48px] font-black md:text-[64px]">Wine3</p>
+            <p className="text-[48px] font-black md:text-[64px]">Vintme</p>
             <p className="text-[16px] font-extralight -mt-3 md:text-[24px]">
               El vino, el sol y el futuro
             </p>
-            <button className="bg-black py-[10px] px-[15px] rounded-[14px] w-fit mt-auto md:mt-[35px] text-white text-[16px] font-semibold md:text-[24px]">
+            <button className="bg-black hover:bg-darkGrey py-[10px] px-[15px] rounded-[14px] w-fit mt-auto md:mt-[35px] text-white text-[16px] font-semibold md:text-[24px] transition duration-150">
               Compra en Open Sea
             </button>
           </div>

@@ -36,19 +36,19 @@ const Home = () => {
         <SwiperSlide id="comofunciona">
           <ComoFunciona />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide id="cosecha">
           <Cosecha />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide id="beneficios">
           <Beneficios />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide id="elefante">
           <Elefante />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide id="equipo">
           <Equipo />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide id="contacto">
           <Contacto />
         </SwiperSlide>
       </Swiper>
