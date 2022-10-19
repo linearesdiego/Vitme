@@ -6,7 +6,7 @@ import cripto from '../assets/criptoPlace.png';
 
 const Footer = () => {
   return (
-    <div className="w-full h-[35%] bg-black text-white flex flex-col justify-evenly">
+    <div className="w-full h-[35%] max-h-[210px] bg-black text-white flex flex-col justify-evenly mt-auto">
       <div className="w-7/12 flex flex-col mx-auto">
         <p className="mx-auto font-poppins font-medium text-[16px] text-white">
           Únete a nosotros

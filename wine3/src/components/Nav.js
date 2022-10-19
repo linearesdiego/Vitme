@@ -11,34 +11,30 @@ const Nav = () => {
   const [showElefante, setShowElefante] = useState(false);
   return (
     <div>
-      <div className="h-[65px] hidden md:flex shadow-md z-50 absolute top-0 right-0 w-[70%] ml-auto bg-white">
+      <div className="h-[65px] hidden md:flex shadow-md z-50 w-full ml-auto bg-white">
         <div className="font-poppins text-[20px] my-auto ml-auto mr-10 flex">
-          <a
-            href="#comofunciona"
-            className="border-r-2 border-r-grey px-5 border-b-2 border-white hover:border-b-2 hover:border-black transition duration-150"
-          >
-            ¿Cómo funciona?
+          <a href="#comofunciona" className="border-r-2 border-r-grey px-5">
+            <p className="hover:border-b-2 hover:border-black border-b-2 border-white transition duration-150">
+              ¿Cómo funciona?
+            </p>
           </a>
 
-          <a
-            href="#cosecha"
-            className="border-r-2 border-r-grey px-5 border-b-2 border-white hover:border-b-2 hover:border-black transition duration-150"
-          >
-            Cosecha
+          <a href="#cosecha" className="border-r-2 border-r-grey px-5">
+            <p className="hover:border-b-2 hover:border-black border-b-2 border-white transition duration-150">
+              Cosecha
+            </p>
           </a>
 
-          <a
-            href="#beneficios"
-            className="border-r-2 border-r-grey px-5 border-b-2 border-white hover:border-b-2 hover:border-black transition duration-150"
-          >
-            Beneficios
+          <a href="#beneficios" className="border-r-2 border-r-grey px-5">
+            <p className="hover:border-b-2 hover:border-black border-b-2 border-white transition duration-150">
+              Beneficios
+            </p>
           </a>
 
-          <a
-            href="#elefante"
-            className="border-r-2 border-r-grey px-5 border-b-2 border-white hover:border-b-2 hover:border-black transition duration-150"
-          >
-            Elefante Wine
+          <a href="#elefante" className="border-r-2 border-r-grey px-5">
+            <p className="hover:border-b-2 hover:border-black border-b-2 border-white transition duration-150">
+              Elefante Wine
+            </p>
           </a>
 
           <a

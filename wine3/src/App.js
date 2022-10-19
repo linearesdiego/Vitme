@@ -9,6 +9,8 @@ import Equipo from './components/sections/Equipo';
 
 function App() {
   return (
+    <Home />
+    /*
     <BrowserRouter>
       <div className="min-h-screen relative">
         <Nav />
@@ -21,6 +23,7 @@ function App() {
         </Routes>
       </div>
     </BrowserRouter>
+    */
   );
 }
 

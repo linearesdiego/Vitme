@@ -19,16 +19,21 @@ const Cosecha = () => {
   }, [windowSize]);
 
   return (
-    <div className="h-screen font-poppins pt-[0%] flex flex-col md:flex-row">
-      
-      <div className="w-[40%] h-fit ml-20 absolute hidden md:block mt-[5%]">
+    <div className="h-screen font-poppins pt-[0%] flex flex-col">
+      <div className="h-[6.5%] flex w-full shadow">
+        <p className="md:text-[32px] md:font-black ml-4 my-auto font-medium text-[24px] ">
+          Cosecha
+        </p>
+      </div>
+
+      <div className="w-[55%] h-fit ml-20 absolute hidden md:block mt-[5%]">
         <p className="font-black text-[64px]">Conocé y disfrutá</p>
         <p className="font-regular text-[24px] w-[70%]">
           Conocé y accedé a los productos más exclusivos de{' '}
           <span className="italic"> Elefante Wine</span>{' '}
         </p>
-        
       </div>
+
       <Swiper
         className="mySwiper2 h-screen w-screen md:w-9/12 md:h-[85%] md:mt-auto bottom-0"
         spaceBetween={0}
@@ -51,12 +56,6 @@ const Cosecha = () => {
               }}
             >
               <SwiperSlide className="h-full w-full">
-                
-                <div className="h-[6.5%] flex w-full shadow md:hidden">
-                  <p className="text-[24px] font-medium ml-4 my-auto">
-                    Cosecha
-                  </p>
-                </div>
                 <div
                   className={
                     isActive
@@ -65,10 +64,6 @@ const Cosecha = () => {
                   }
                 >
                   <div className="md:hidden">
-                    <p className="text-[12px] italic font-regular text-center -mt-5">
-                      Conocé y accedé a los productos más exclusivos de Elefante
-                      Wine.
-                    </p>
                     <p className="text-[48px] font-black">Pinot Noir</p>
                     <p className="text-[16px] font-extralight">
                       De la tierra del sol y del buen vino
@@ -122,10 +117,7 @@ const Cosecha = () => {
                   </div>
                   <div className="">
                     <p className="text-[12px] w-6/12 mx-auto text-center md:hidden">
-                      “Este vino es la prueba de que el amor lo puede todo”
-                    </p>
-                    <p className="text-[12px] ml-auto w-6/12 md:hidden">
-                      fasfkjsdhflasdfhlkds
+                      “El que buen vino bebe, a beberlo vuelve”
                     </p>
                   </div>
                 </div>
@@ -174,11 +166,6 @@ const Cosecha = () => {
               }}
             >
               <SwiperSlide className="h-full w-full">
-                <div className="h-[6.5%] flex w-full shadow md:hidden">
-                  <p className="text-[24px] font-medium ml-4 my-auto">
-                    Cosecha
-                  </p>
-                </div>
                 <div
                   className={
                     isActive
@@ -187,10 +174,6 @@ const Cosecha = () => {
                   }
                 >
                   <div className="md:hidden">
-                    <p className="text-[12px] italic font-regular text-center -mt-5">
-                      Conocé y accedé a los productos más exclusivos de Elefante
-                      Wine.
-                    </p>
                     <p className="text-[48px] font-black">Syrah</p>
                     <p className="text-[16px] font-extralight">
                       De la tierra del sol y del buen vino
@@ -244,10 +227,7 @@ const Cosecha = () => {
                   </div>
                   <div className="">
                     <p className="text-[12px] w-6/12 mx-auto text-center md:hidden">
-                      “Este vino es la prueba de que el amor lo puede todo”
-                    </p>
-                    <p className="text-[12px] ml-auto w-6/12 md:hidden">
-                      fasfkjsdhflasdfhlkds
+                      “El que buen vino bebe, a beberlo vuelve”
                     </p>
                   </div>
                 </div>
@@ -297,11 +277,6 @@ const Cosecha = () => {
               }}
             >
               <SwiperSlide className="h-full w-full">
-                <div className="h-[6.5%] flex w-full shadow md:hidden">
-                  <p className="text-[24px] font-medium ml-4 my-auto">
-                    Cosecha
-                  </p>
-                </div>
                 <div
                   className={
                     isActive
@@ -310,10 +285,6 @@ const Cosecha = () => {
                   }
                 >
                   <div className="md:hidden">
-                    <p className="text-[12px] italic font-regular text-center -mt-5">
-                      Conocé y accedé a los productos más exclusivos de Elefante
-                      Wine.
-                    </p>
                     <p className="text-[48px] font-black">Blend</p>
                     <p className="text-[16px] font-extralight">
                       De la tierra del sol y del buen vino
@@ -368,10 +339,7 @@ const Cosecha = () => {
                   </div>
                   <div className="">
                     <p className="text-[12px] w-6/12 mx-auto text-center md:hidden">
-                      “Este vino es la prueba de que el amor lo puede todo”
-                    </p>
-                    <p className="text-[12px] ml-auto w-6/12 md:hidden">
-                      fasfkjsdhflasdfhlkds
+                      “El que buen vino bebe, a beberlo vuelve”
                     </p>
                   </div>
                 </div>

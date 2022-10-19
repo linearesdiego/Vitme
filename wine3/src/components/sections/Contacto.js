@@ -3,9 +3,9 @@ import Footer from '../Footer';
 
 const Contacto = () => {
   return (
-    <div className="bg-white h-screen flex flex-col font-poppins">
-      <div className="h-[67px] flex w-full shadow">
-        <p className="text-[24px] font-medium ml-4 my-auto">Contacto</p>
+    <div className="h-screen flex flex-col font-poppins">
+      <div className="h-[6.5%] flex w-full shadow bg-white z-50">
+        <p className="text-[32px] font-black ml-4 my-auto">Contacto</p>
       </div>
 
       <div className="md:flex">
@@ -67,6 +67,7 @@ const Contacto = () => {
           </div>
         </form>
       </div>
+
       <Footer />
     </div>
   );
