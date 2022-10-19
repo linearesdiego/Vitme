@@ -19,7 +19,7 @@ const Elefante = () => {
       modules={[Pagination]}
     >
       <SwiperSlide className="h-full">
-        <div className="h-14 flex w-full shadow ">
+        <div className="h-[55px] flex w-full shadow ">
           <p className="text-[24px] font-medium ml-4 my-auto">Elefante Wine</p>
         </div>
         <div className="flex flex-col h-full fondo">
@@ -51,7 +51,7 @@ const Elefante = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide className="h-full">
-        <div className="h-14 flex w-full shadow ">
+        <div className="h-[55px] flex w-full shadow ">
           <p className=" md:hidden text-[24px] font-medium ml-4 my-auto">
             Historia del nombre
           </p>
@@ -65,27 +65,18 @@ const Elefante = () => {
               Historia del nombre
             </h2>
 
-            <div className="flex flex-col text-[16px] mx-10 mt-12 h-[400px] md:w-4/12 md:text-[20px] md:mx-0 md:h-[230px] md:w-[460px]">
-              <p>
-                Los Elefantes tienen una prodigiosa memoria asociada al olfato.
-                Los humanos tenemos una memoria olfativa asociada a nuestras
-                emociones. Un vino que no pretende ser memorable, sino que
-                intenta tocar una fibra, “algo que nos haga recordar”.
-              </p>
+            <div className="flex flex-col text-[16px] mx-10 mt-12 h-[400px] md:w-4/12 md:text-[20px] md:mx-0 md:h-[230px] md:w-[35%]">
+              <p>Los Elefantes tienen una prodigiosa memoria asociada al olfato. Los humanos tenemos una memoria olfativa asociada a nuestras emociones. Un vino que no pretende ser memorable, sino que intenta tocar una fibra, “algo que nos haga recordar”.</p>
             </div>
           </div>
           <div>
-            <img
-              src={historia}
-              alt="historia"
-              className="rounded-3xl m-auto w-64 h-72 "
-            ></img>
+            <img src={historia} alt="historia" className="rounded-3xl m-auto w-64 h-72 "></img>
           </div>
         </div>
       </SwiperSlide>
 
       <SwiperSlide className="h-full">
-        <div className="h-14 flex w-full shadow ">
+        <div className="h-[55px] flex w-full shadow ">
           <p className=" md:hidden text-[24px] font-medium ml-4 my-auto">
             Sobre Feli y Juli
           </p>
@@ -98,14 +89,8 @@ const Elefante = () => {
             <h2 className="hidden md:block text-[64px] font-black	m-10 md:w-4/12">
               Feli y Juli
             </h2>
-            <div className="flex flex-col text-[16px] mx-10 mt-12 h-[400px] md:w-4/12 md:text-[20px] md:mx-0 md:h-[230px] md:w-[460px]">
-              <p>
-                Su historia comenzó en la Facultad de Ciencias Agrarias de
-                UNCuyo, donde además del amor, nació el proyecto enológico. El
-                matrimonio comparte la misma pasión por la vitivinicultura, por
-                lo que a la hora emprender se complementaron y formaron un buen
-                equipo de trabajo.
-              </p>
+            <div className="flex flex-col text-[16px] mx-10 mt-12 h-[400px] md:w-4/12 md:text-[20px] md:mx-0 md:h-[230px] md:w-[35%]">
+              <p>Su historia comenzó en la Facultad de Ciencias Agrarias de UN Cuyo, donde además del amor, nació el proyecto enológico. El matrimonio comparte la misma pasión por la vitivinicultura, por lo que a la hora emprender se complementaron y formaron un buen equipo de trabajo.</p>
             </div>
           </div>
           <div>
@@ -119,7 +104,7 @@ const Elefante = () => {
       </SwiperSlide>
 
       <SwiperSlide className="h-full">
-        <div className="h-14 flex w-full shadow ">
+        <div className="h-[55px] flex w-full shadow ">
           <p className=" md:hidden text-[24px] font-medium ml-4 my-auto">
             Eco Friendly
           </p>
@@ -132,7 +117,7 @@ const Elefante = () => {
             <h2 className="hidden md:block text-[64px] font-black	m-10 md:w-4/12">
               Eco Friendly
             </h2>
-            <div className="flex flex-col text-[16px] mx-10 mt-12 h-[400px] md:w-4/12 md:text-[20px] md:mx-0 md:h-[230px] md:w-[400px]">
+            <div className="flex flex-col text-[16px] mx-10 mt-12 h-[400px] md:w-4/12 md:text-[20px] md:mx-0 md:h-[230px] md:w-[35%]">
               <p>
                 Es un emprendimiento ampliamente comprometido con el medio
                 ambiente, con intención de no dejar huella de carbono.
@@ -150,20 +135,6 @@ const Elefante = () => {
         </div>
       </SwiperSlide>
 
-      {/* <SwiperSlide className="h-full">
-              <div className="h-14 flex w-full shadow ">
-                <p className="text-[24px] font-medium ml-4 my-auto">Eco Friendly</p>
-              </div>
-              <div className="flex flex-col h-full fondo2 ">
-                <div>
-                  <p className="text-[16px] mx-10 mt-12 leading-6 h-[400px]">
-                  Es un emprendimiento ampliamente comprometido con el medio ambiente, con intención de no dejar huella de carbono, recicla sus envases y cajas en las que se realizan los embalajes, son dobladas y reutilizadas. Se comprometen a usar la tecnología de paneles solares. El agua que utilizan es filtrada y reutilizada por otro productor vecino, por lo que tampoco </p>
-                </div>
-                <div>
-                <img src={tripleimpacto} alt="tripleimpacto" className='rounded-3xl m-auto w-64 h-72' ></img>
-                </div>
-              </div>
-      </SwiperSlide> */}
     </Swiper>
   );
 };

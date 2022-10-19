@@ -20,12 +20,14 @@ const Cosecha = () => {
 
   return (
     <div className="h-screen font-poppins pt-[0%] flex flex-col md:flex-row">
+      
       <div className="w-[40%] h-fit ml-20 absolute hidden md:block mt-[5%]">
         <p className="font-black text-[64px]">Conocé y disfrutá</p>
         <p className="font-regular text-[24px] w-[70%]">
           Conocé y accedé a los productos más exclusivos de{' '}
           <span className="italic"> Elefante Wine</span>{' '}
         </p>
+        
       </div>
       <Swiper
         className="mySwiper2 h-screen w-screen md:w-9/12 md:h-[85%] md:mt-auto bottom-0"
@@ -49,6 +51,7 @@ const Cosecha = () => {
               }}
             >
               <SwiperSlide className="h-full w-full">
+                
                 <div className="h-[6.5%] flex w-full shadow md:hidden">
                   <p className="text-[24px] font-medium ml-4 my-auto">
                     Cosecha

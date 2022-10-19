@@ -29,7 +29,7 @@ const Equipo = () => {
           }}
         >
           <SwiperSlide className="h-full">
-            <div className="h-14 flex w-full shadow ">
+           <div className="h-[55px] flex w-full shadow ">
               <p className="text-[24px] font-medium ml-4 my-auto">El equipo</p>
             </div>
             <div className="flex flex-col justify-evenly">

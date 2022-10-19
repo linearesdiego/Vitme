@@ -4,7 +4,7 @@ import Footer from '../Footer';
 const Contacto = () => {
   return (
     <div className="bg-white h-screen flex flex-col font-poppins">
-      <div className="h-[67px] flex w-full shadow py-[0.7%]">
+      <div className="h-[67px] flex w-full shadow">
         <p className="text-[24px] font-medium ml-4 my-auto">Contacto</p>
       </div>
 

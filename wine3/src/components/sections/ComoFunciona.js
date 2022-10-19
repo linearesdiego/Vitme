@@ -8,7 +8,7 @@ const ComoFunciona = () => {
       id="comofunciona"
       className="bg-white h-screen flex flex-col font-poppins overflow-hidden"
     >
-      <div className="h-[6.5%] flex w-full shadow py-[2%]">
+      <div className="h-[55px] flex w-full shadow">
         <p className="text-[24px] font-medium ml-4 my-auto ">¿Como funciona?</p>
       </div>
       <div className="w-11/12 h-[93.5%] flex flex-col justify-around m-auto md:hidden">
