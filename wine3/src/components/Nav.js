@@ -11,7 +11,7 @@ const Nav = () => {
   const [showElefante, setShowElefante] = useState(false);
   return (
     <div>
-      <div className="h-[65px] hidden md:flex shadow-md z-50 absolute top-0 left-0 w-full bg-white">
+      <div className="h-[65px] hidden md:flex shadow-md z-50 absolute top-0 right-0 w-[50%] ml-auto bg-white">
         <div className="font-poppins text-[20px] my-auto ml-auto mr-10 flex">
           <a
             href="#comofunciona"

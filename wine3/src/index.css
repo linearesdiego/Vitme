@@ -131,37 +131,35 @@ code {
   padding: 0px 0px 5px;
 }
 
-<<<<<<< HEAD
 html {
   scroll-behavior: smooth;
 }
-=======
+
 @media (min-width: 1039px) {
-  .equipo{
-    display:inline-flex;
+  .equipo {
+    display: inline-flex;
     height: 154px;
     width: 414px;
-    margin: 0px 10px;
+    margin: 0;
   }
-   
-  .equipo2-tarjeta{
-    margin: 10px 2%;
+  .equipo2 {
+    justify-content: space-between;
+    width: 90%;
+  }
+  .equipo2-tarjeta {
+    margin: 0;
     margin-top: 50px;
   }
 
   .fondo {
     background-image: url(./assets/elefante/background-desktop.png);
   }
-  
+
   .fondo1 {
     background-image: url(./assets/elefante/background-desktop.png);
   }
-  
+
   .fondo2 {
     background-image: url(./assets/elefante/background-desktop.png);
-  }  
-
+  }
 }
-
- 
->>>>>>> nacho

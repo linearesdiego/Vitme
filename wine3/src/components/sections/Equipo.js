@@ -34,9 +34,14 @@ const Equipo = () => {
             </div>
             <div className="flex flex-col justify-evenly">
               <div>
-                <h2 className="hidden md:block text-[64px] leading-[96px] font-black	mx-10">¿Quienes somos?</h2>
+                <h2 className="hidden md:block text-[64px] leading-[96px] font-black	mx-10">
+                  ¿Quienes somos?
+                </h2>
                 <p className="hidden md:block text-[16px] p-5	 pb-14 md:ml-10 md:mr-[45%]">
-                Para lograr nuestro objetivo y cumplir la misión de conectar a las bodegas locales con el mundo entero a través del uso de la tecnología blockchain, hemos reunido este equipo de profesionales:
+                  Para lograr nuestro objetivo y cumplir la misión de conectar a
+                  las bodegas locales con el mundo entero a través del uso de la
+                  tecnología blockchain, hemos reunido este equipo de
+                  profesionales:
                 </p>
                 <p className=" md:hidden text-[16px] p-5	 pb-14 md:ml-10 md:mr-[45%]">
                   Buscamos conectar a las bodegas locales con el mundo entero, a
@@ -44,119 +49,186 @@ const Equipo = () => {
                   cometido hemos reunido el siguiente equipo de profesionales
                 </p>
               </div>
-              <div className="h-full ">
-                <div className=" equipo ">
-                  <div>
-                    <img src={federico} alt="federico" className=" rounded-xlinline-block rounded-full"/>
-                  </div>
-                  <div className='equipo-texto'>
-                    <h2>Federico <strong>Marino</strong></h2>
-                    <p>Co Founder</p>
-                    <div className=" equipo-iconos">
-                      <div className="equipo-iconos-icon">
-                        <img src={linkedin} alt="linkedin" />
+              <div className="h-full">
+                <div className="md:w-[90%] md:justify-between md:flex md:mx-auto">
+                  <div className=" equipo ">
+                    <div>
+                      <img
+                        src={federico}
+                        alt="federico"
+                        className=" rounded-xlinline-block rounded-full"
+                      />
+                    </div>
+                    <div className="equipo-texto">
+                      <h2>
+                        Federico <strong>Marino</strong>
+                      </h2>
+                      <p>Co Founder</p>
+                      <div className=" equipo-iconos">
+                        <div className="equipo-iconos-icon">
+                          <img src={linkedin} alt="linkedin" />
+                        </div>
+                        <div className="equipo-iconos-icon">
+                          <img src={twitter} alt="twitter" />
+                        </div>
                       </div>
-                      <div className="equipo-iconos-icon">
-                        <img src={twitter} alt="twitter" />
+                    </div>
+                  </div>
+
+                  <div className=" equipo ">
+                    <div>
+                      <img
+                        src={rodrigo}
+                        alt="rodrigo"
+                        className="rounded-xlinline-block rounded-full"
+                      />
+                    </div>
+                    <div className="equipo-texto">
+                      <h2>
+                        Rodrigo <strong>Dománico</strong>
+                      </h2>
+                      <p>Co Founder</p>
+                      <div className=" equipo-iconos">
+                        <div className="equipo-iconos-icon">
+                          <img src={linkedin} alt="linkedin" />
+                        </div>
+                        <div className="equipo-iconos-icon">
+                          <img src={twitter} alt="twitter" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className=" equipo ">
+                    <div>
+                      <img
+                        src={rodrigo}
+                        alt="rodrigo"
+                        className="rounded-xlinline-block rounded-full"
+                      />
+                    </div>
+                    <div className="equipo-texto">
+                      <h2>
+                        Rodrigo <strong>Dománico</strong>
+                      </h2>
+                      <p>Co Founder</p>
+                      <div className=" equipo-iconos">
+                        <div className="equipo-iconos-icon">
+                          <img src={linkedin} alt="linkedin" />
+                        </div>
+                        <div className="equipo-iconos-icon">
+                          <img src={twitter} alt="twitter" />
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className=" equipo ">
-                  <div>
-                    <img
-                      src={rodrigo}
-                      alt="rodrigo"
-                      className="rounded-xlinline-block rounded-full"
-                    />
-                  </div>
-                  <div className='equipo-texto'>
-                    <h2>Rodrigo <strong>Dománico</strong></h2>
-                    <p>Co Founder</p>
-                    <div className=" equipo-iconos">
-                      <div className="equipo-iconos-icon">
-                        <img src={linkedin} alt="linkedin" />
-                      </div>
-                      <div className="equipo-iconos-icon">
-                        <img src={twitter} alt="twitter" />
-                      </div>
+                <div className="hidden md:block">
+                  <div className="equipo2 md:flex md:mx-auto ">
+                    <div className="equipo2-tarjeta">
+                      <img
+                        src={federico}
+                        alt="federico"
+                        className="rounded-xlinline-block rounded-full equipo2-img"
+                      />
+                      <h2>
+                        Federico <strong>Marino</strong>
+                      </h2>
+                      <p>Co Founder</p>
+                      <img
+                        src={linkedin}
+                        alt="linkedin"
+                        className="equipo2-icon"
+                      />
+                    </div>
+
+                    <div className="equipo2-tarjeta">
+                      <img
+                        src={federico}
+                        alt="federico"
+                        className="rounded-xlinline-block rounded-full equipo2-img"
+                      />
+                      <h2>
+                        Federico <strong>Marino</strong>
+                      </h2>
+                      <p>Co Founder</p>
+                      <img
+                        src={linkedin}
+                        alt="linkedin"
+                        className="equipo2-icon"
+                      />
+                    </div>
+
+                    <div className="equipo2-tarjeta">
+                      <img
+                        src={federico}
+                        alt="federico"
+                        className="rounded-xlinline-block rounded-full equipo2-img"
+                      />
+                      <h2>
+                        Federico <strong>Marino</strong>
+                      </h2>
+                      <p>Co Founder</p>
+                      <img
+                        src={linkedin}
+                        alt="linkedin"
+                        className="equipo2-icon"
+                      />
+                    </div>
+
+                    <div className="equipo2-tarjeta">
+                      <img
+                        src={federico}
+                        alt="federico"
+                        className="rounded-xlinline-block rounded-full equipo2-img"
+                      />
+                      <h2>
+                        Federico <strong>Marino</strong>
+                      </h2>
+                      <p>Co Founder</p>
+                      <img
+                        src={linkedin}
+                        alt="linkedin"
+                        className="equipo2-icon"
+                      />
+                    </div>
+
+                    <div className="equipo2-tarjeta">
+                      <img
+                        src={federico}
+                        alt="federico"
+                        className="rounded-xlinline-block rounded-full equipo2-img"
+                      />
+                      <h2>
+                        Federico <strong>Marino</strong>
+                      </h2>
+                      <p>Co Founder</p>
+                      <img
+                        src={linkedin}
+                        alt="linkedin"
+                        className="equipo2-icon"
+                      />
+                    </div>
+
+                    <div className="equipo2-tarjeta">
+                      <img
+                        src={federico}
+                        alt="federico"
+                        className="rounded-xlinline-block rounded-full equipo2-img"
+                      />
+                      <h2>
+                        Federico <strong>Marino</strong>
+                      </h2>
+                      <p>Co Founder</p>
+                      <img
+                        src={linkedin}
+                        alt="linkedin"
+                        className="equipo2-icon"
+                      />
                     </div>
                   </div>
                 </div>
-
-                <div className=" equipo ">
-                  <div>
-                    <img
-                      src={rodrigo}
-                      alt="rodrigo"
-                      className="rounded-xlinline-block rounded-full"
-                    />
-                  </div>
-                  <div className='equipo-texto'>
-                    <h2>Rodrigo <strong>Dománico</strong></h2>
-                    <p>Co Founder</p>
-                    <div className=" equipo-iconos">
-                      <div className="equipo-iconos-icon">
-                        <img src={linkedin} alt="linkedin" />
-                      </div>
-                      <div className="equipo-iconos-icon">
-                        <img src={twitter} alt="twitter" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-      
-              <div className='hidden md:block'>
-
-                <div className="equipo2 ">
-                  <div className="equipo2-tarjeta">
-                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
-                    <h2>Federico <strong>Marino</strong></h2>
-                    <p>Co Founder</p>
-                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
-                  </div>
-
-                  <div className="equipo2-tarjeta">
-                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
-                    <h2>Federico <strong>Marino</strong></h2>
-                    <p>Co Founder</p>
-                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
-                  </div>
-
-                  <div className="equipo2-tarjeta">
-                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
-                    <h2>Federico <strong>Marino</strong></h2>
-                    <p>Co Founder</p>
-                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
-                  </div>
-
-                  <div className="equipo2-tarjeta">
-                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
-                    <h2>Federico <strong>Marino</strong></h2>
-                    <p>Co Founder</p>
-                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
-                  </div>
-
-                  <div className="equipo2-tarjeta">
-                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
-                    <h2>Federico <strong>Marino</strong></h2>
-                    <p>Co Founder</p>
-                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
-                  </div>
-
-                  <div className="equipo2-tarjeta">
-                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
-                    <h2>Federico <strong>Marino</strong></h2>
-                    <p>Co Founder</p>
-                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
-                  </div>
- 
-                </div>
-              </div>
-
-
               </div>
             </div>
           </SwiperSlide>
@@ -166,67 +238,120 @@ const Equipo = () => {
             </div>
             <div className="flex flex-col justify-evenly">
               <div>
-              <p className="text-[16px] p-5	 pb-14">
+                <p className="text-[16px] p-5	 pb-14">
                   Buscamos conectar a las bodegas locales con el mundo entero, a
                   través del uso de la tecnología blockchain. Para lograr este
                   cometido hemos reunido el siguiente equipo de profesionales
                 </p>
-                
               </div>
               <div className="h-full">
-              <div className="equipo2">
+                <div className="equipo2">
                   <div className="equipo2-tarjeta">
-                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
-                    <h2>Federico <strong>Marino</strong></h2>
+                    <img
+                      src={federico}
+                      alt="federico"
+                      className="rounded-xlinline-block rounded-full equipo2-img"
+                    />
+                    <h2>
+                      Federico <strong>Marino</strong>
+                    </h2>
                     <p>Co Founder</p>
-                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
+                    <img
+                      src={linkedin}
+                      alt="linkedin"
+                      className="equipo2-icon"
+                    />
                   </div>
 
                   <div className="equipo2-tarjeta">
-                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
-                    <h2>Federico <strong>Marino</strong></h2>
+                    <img
+                      src={federico}
+                      alt="federico"
+                      className="rounded-xlinline-block rounded-full equipo2-img"
+                    />
+                    <h2>
+                      Federico <strong>Marino</strong>
+                    </h2>
                     <p>Co Founder</p>
-                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
+                    <img
+                      src={linkedin}
+                      alt="linkedin"
+                      className="equipo2-icon"
+                    />
                   </div>
- 
                 </div>
 
                 <div className="equipo2">
                   <div className="equipo2-tarjeta">
-                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
-                    <h2>Federico <strong>Marino</strong></h2>
+                    <img
+                      src={federico}
+                      alt="federico"
+                      className="rounded-xlinline-block rounded-full equipo2-img"
+                    />
+                    <h2>
+                      Federico <strong>Marino</strong>
+                    </h2>
                     <p>Co Founder</p>
-                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
+                    <img
+                      src={linkedin}
+                      alt="linkedin"
+                      className="equipo2-icon"
+                    />
                   </div>
 
                   <div className="equipo2-tarjeta">
-                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
-                    <h2>Federico <strong>Marino</strong></h2>
+                    <img
+                      src={federico}
+                      alt="federico"
+                      className="rounded-xlinline-block rounded-full equipo2-img"
+                    />
+                    <h2>
+                      Federico <strong>Marino</strong>
+                    </h2>
                     <p>Co Founder</p>
-                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
+                    <img
+                      src={linkedin}
+                      alt="linkedin"
+                      className="equipo2-icon"
+                    />
                   </div>
- 
                 </div>
 
                 <div className="equipo2">
                   <div className="equipo2-tarjeta">
-                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
-                    <h2>Federico <strong>Marino</strong></h2>
+                    <img
+                      src={federico}
+                      alt="federico"
+                      className="rounded-xlinline-block rounded-full equipo2-img"
+                    />
+                    <h2>
+                      Federico <strong>Marino</strong>
+                    </h2>
                     <p>Co Founder</p>
-                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
+                    <img
+                      src={linkedin}
+                      alt="linkedin"
+                      className="equipo2-icon"
+                    />
                   </div>
 
                   <div className="equipo2-tarjeta">
-                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
-                    <h2>Federico <strong>Marino</strong></h2>
+                    <img
+                      src={federico}
+                      alt="federico"
+                      className="rounded-xlinline-block rounded-full equipo2-img"
+                    />
+                    <h2>
+                      Federico <strong>Marino</strong>
+                    </h2>
                     <p>Co Founder</p>
-                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
+                    <img
+                      src={linkedin}
+                      alt="linkedin"
+                      className="equipo2-icon"
+                    />
                   </div>
- 
                 </div>
-
- 
- 
               </div>
             </div>
           </SwiperSlide>
