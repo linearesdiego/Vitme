@@ -34,17 +34,21 @@ const Equipo = () => {
             </div>
             <div className="flex flex-col justify-evenly">
               <div>
-                <p className="text-[16px] p-5	 pb-14">
+                <h2 className="hidden md:block text-[64px] leading-[96px] font-black	mx-10">¿Quienes somos?</h2>
+                <p className="hidden md:block text-[16px] p-5	 pb-14 md:ml-10 md:mr-[45%]">
+                Para lograr nuestro objetivo y cumplir la misión de conectar a las bodegas locales con el mundo entero a través del uso de la tecnología blockchain, hemos reunido este equipo de profesionales:
+                </p>
+                <p className=" md:hidden text-[16px] p-5	 pb-14 md:ml-10 md:mr-[45%]">
                   Buscamos conectar a las bodegas locales con el mundo entero, a
                   través del uso de la tecnología blockchain. Para lograr este
                   cometido hemos reunido el siguiente equipo de profesionales
                 </p>
               </div>
-              <div className="h-full">
+              <div className="h-full ">
                 <div className=" equipo ">
                   <div>
                     <img src={federico} alt="federico" className=" rounded-xlinline-block rounded-full"/>
-                  </div >
+                  </div>
                   <div className='equipo-texto'>
                     <h2>Federico <strong>Marino</strong></h2>
                     <p>Co Founder</p>
@@ -84,13 +88,13 @@ const Equipo = () => {
                 <div className=" equipo ">
                   <div>
                     <img
-                      src={kevin}
-                      alt="kevin"
+                      src={rodrigo}
+                      alt="rodrigo"
                       className="rounded-xlinline-block rounded-full"
                     />
                   </div>
                   <div className='equipo-texto'>
-                    <h2>Kevin <strong>Willenberg</strong></h2>
+                    <h2>Rodrigo <strong>Dománico</strong></h2>
                     <p>Co Founder</p>
                     <div className=" equipo-iconos">
                       <div className="equipo-iconos-icon">
@@ -102,20 +106,72 @@ const Equipo = () => {
                     </div>
                   </div>
                 </div>
+
+      
+              <div className='hidden md:block'>
+
+                <div className="equipo2 ">
+                  <div className="equipo2-tarjeta">
+                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
+                    <h2>Federico <strong>Marino</strong></h2>
+                    <p>Co Founder</p>
+                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
+                  </div>
+
+                  <div className="equipo2-tarjeta">
+                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
+                    <h2>Federico <strong>Marino</strong></h2>
+                    <p>Co Founder</p>
+                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
+                  </div>
+
+                  <div className="equipo2-tarjeta">
+                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
+                    <h2>Federico <strong>Marino</strong></h2>
+                    <p>Co Founder</p>
+                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
+                  </div>
+
+                  <div className="equipo2-tarjeta">
+                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
+                    <h2>Federico <strong>Marino</strong></h2>
+                    <p>Co Founder</p>
+                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
+                  </div>
+
+                  <div className="equipo2-tarjeta">
+                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
+                    <h2>Federico <strong>Marino</strong></h2>
+                    <p>Co Founder</p>
+                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
+                  </div>
+
+                  <div className="equipo2-tarjeta">
+                    <img src={federico} alt="federico" className="rounded-xlinline-block rounded-full equipo2-img"/>
+                    <h2>Federico <strong>Marino</strong></h2>
+                    <p>Co Founder</p>
+                    <img src={linkedin} alt="linkedin" className='equipo2-icon'/>
+                  </div>
+ 
+                </div>
+              </div>
+
+
               </div>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="h-full">
+          <SwiperSlide className="h-full block md:hidden">
             <div className="h-14 flex w-full shadow ">
               <p className="text-[24px] font-medium ml-4 my-auto">El equipo</p>
             </div>
             <div className="flex flex-col justify-evenly">
               <div>
-                <p className="text-[16px] p-5	 pb-14">
+              <p className="text-[16px] p-5	 pb-14">
                   Buscamos conectar a las bodegas locales con el mundo entero, a
                   través del uso de la tecnología blockchain. Para lograr este
                   cometido hemos reunido el siguiente equipo de profesionales
                 </p>
+                
               </div>
               <div className="h-full">
               <div className="equipo2">

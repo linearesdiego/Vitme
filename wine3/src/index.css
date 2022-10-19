@@ -16,19 +16,19 @@ code {
 }
 
 .fondo {
-  background-image: url(./assets/elefante/background.png);
+  background-image: url(./assets/elefante/background-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .fondo1 {
-  background-image: url(./assets/elefante/background1.png);
+  background-image: url(./assets/elefante/background1-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .fondo2 {
-  background-image: url(./assets/elefante/background2.png);
+  background-image: url(./assets/elefante/background2-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -97,7 +97,7 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px;
+  margin: 20px 10px 0px 10px;
 }
 
 .equipo2-tarjeta h2{
@@ -130,3 +130,32 @@ code {
   align-items: center;
   padding: 0px 0px 5px;
 }
+
+@media (min-width: 1039px) {
+  .equipo{
+    display:inline-flex;
+    height: 154px;
+    width: 414px;
+    margin: 0px 10px;
+  }
+   
+  .equipo2-tarjeta{
+    margin: 10px 2%;
+    margin-top: 50px;
+  }
+
+  .fondo {
+    background-image: url(./assets/elefante/background-desktop.png);
+  }
+  
+  .fondo1 {
+    background-image: url(./assets/elefante/background-desktop.png);
+  }
+  
+  .fondo2 {
+    background-image: url(./assets/elefante/background-desktop.png);
+  }  
+
+}
+
+ 
