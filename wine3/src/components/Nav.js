@@ -92,7 +92,7 @@ const Nav = () => {
                 </button>
               </div>
               {showLote && (
-                <div className="bg-[#4E4E4E] font-poppins font-light text-[16px] text-white">
+                <div className="bg-[#4E4E4E] font-poppins font-regular text-[16px] text-white">
                   <div className="w-full pl-[20px] py-[15px]">
                     <a href="#pinotnoir">Pinot Noir</a>
                   </div>
@@ -128,7 +128,7 @@ const Nav = () => {
                 </button>
               </div>
               {showElefante && (
-                <div className="bg-[#4E4E4E] font-poppins font-light text-[16px] text-white">
+                <div className="bg-[#4E4E4E] font-poppins font-regular text-[16px] text-white">
                   <div className="w-full pl-[20px] py-[15px]">
                     <Link to={'/elefante'}>Historia</Link>
                   </div>
@@ -156,7 +156,7 @@ const Nav = () => {
                   alt="discord"
                   className="w-[25px] m-auto mt-5 mb-2"
                 ></img>
-                <p className="font-poppins text-white font-light text-[12px]">
+                <p className="font-poppins text-white font-regular text-[12px]">
                   discord
                 </p>
               </div>
@@ -166,7 +166,7 @@ const Nav = () => {
                   alt="twitter"
                   className="w-[25px] m-auto mt-5 mb-2"
                 ></img>
-                <p className="font-poppins text-white font-light text-[12px]">
+                <p className="font-poppins text-white font-regular text-[12px]">
                   twitter
                 </p>
               </div>
@@ -176,7 +176,7 @@ const Nav = () => {
                   alt="telegram"
                   className="w-[25px] m-auto mt-5 mb-2"
                 ></img>
-                <p className="font-poppins text-white font-light text-[12px]">
+                <p className="font-poppins text-white font-regular text-[12px]">
                   telegram
                 </p>
               </div>

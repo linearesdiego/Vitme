@@ -1,5 +1,4 @@
 import React from 'react';
-import wineshero from '../../assets/wineshero.png';
 import discordB from '../../assets/icons/discordB.png';
 import twitterB from '../../assets/icons/twitterB.png';
 import telegramB from '../../assets/icons/telegramB.png';
@@ -10,14 +9,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
-import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper';
+import { Autoplay } from 'swiper';
 
 const Hero = () => {
   return (
     <div className="bg-white h-screen flex font-poppins">
       <div className="w-11/12 h-[93.5%] mx-auto mt-auto md:flex justify-between">
         <div className="md:w-5/12 md:flex md:flex-col justify-between h-[20%] md:h-full">
-          <div className="flex flex-col h-full md:h-fit">
+          <div className="flex flex-col h-full md:h-fit md:mt-10">
             <p className="text-[48px] font-black md:text-[64px]">Vintme</p>
             <p className="text-[16px] font-extralight -mt-3 md:text-[24px]">
               El vino, el sol y el futuro
@@ -28,7 +27,7 @@ const Hero = () => {
           </div>
           <div className="w-4/12 mb-14 hidden md:flex">
             <div className="w-full flex flex-col">
-              <p className="mx-auto font-poppins font-light text-[24px] text-black">
+              <p className="mx-auto font-poppins font-regular text-[24px] text-black">
                 Únete a nosotros
               </p>
               <div className="w-full flex justify-around gap-2">
@@ -38,7 +37,7 @@ const Hero = () => {
                     alt="discord"
                     className="m-auto mt-5 mb-2 max-h-[25px]"
                   ></img>
-                  <p className="font-poppins text-black font-light text-[16px]">
+                  <p className="font-poppins text-black font-regular text-[16px]">
                     discord
                   </p>
                 </div>
@@ -48,7 +47,7 @@ const Hero = () => {
                     alt="twitter"
                     className="m-auto mt-5 mb-2 max-h-[25px]"
                   ></img>
-                  <p className="font-poppins text-black font-light text-[16px]">
+                  <p className="font-poppins text-black font-regular text-[16px]">
                     twitter
                   </p>
                 </div>
@@ -58,7 +57,7 @@ const Hero = () => {
                     alt="telegram"
                     className="m-auto mt-5 mb-2 max-h-[25px]"
                   ></img>
-                  <p className="font-poppins text-black font-light text-[16px]">
+                  <p className="font-poppins text-black font-regular text-[16px]">
                     telegram
                   </p>
                 </div>

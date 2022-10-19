@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { Pagination, Navigation, Autoplay } from 'swiper';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -11,6 +11,7 @@ import blend from '../../assets/wines/blend.png';
 import '../../App.css';
 
 const Cosecha = () => {
+  const swiper = useSwiper();
   const [windowSize, setWindowSize] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -19,9 +20,9 @@ const Cosecha = () => {
 
   return (
     <div className="h-screen font-poppins pt-[0%] flex flex-col md:flex-row">
-      <div className="w-[30%] h-fit ml-20 absolute hidden md:block mt-[5%]">
-        <p className="font-medium text-[40px]">Cosecha</p>
-        <p className="font-light text-[24px]">
+      <div className="w-[40%] h-fit ml-20 absolute hidden md:block mt-[5%]">
+        <p className="font-black text-[64px]">Conocé y disfrutá</p>
+        <p className="font-regular text-[24px] w-[70%]">
           Conocé y accedé a los productos más exclusivos de{' '}
           <span className="italic"> Elefante Wine</span>{' '}
         </p>
@@ -61,7 +62,7 @@ const Cosecha = () => {
                   }
                 >
                   <div className="md:hidden">
-                    <p className="text-[12px] italic font-light text-center -mt-5">
+                    <p className="text-[12px] italic font-regular text-center -mt-5">
                       Conocé y accedé a los productos más exclusivos de Elefante
                       Wine.
                     </p>
@@ -71,16 +72,18 @@ const Cosecha = () => {
                     </p>
                   </div>
                   <div className="">
-                    <a
-                      href="#"
+                    <button
+                      onClick={() => swiper.slideNext()}
                       className="rounded-[14px] font-semibold text-[20px] py-[10px] px-[60px] bg-black text-white md:hidden"
                     >
-                      Mint
-                    </a>
+                      ver más
+                    </button>
                   </div>
                   <div
                     className={
-                      isActive ? 'h-[50%] md:h-[70%]' : 'h-[50%] md:h-[40%]'
+                      isActive
+                        ? 'h-[50%] md:h-[70%]'
+                        : 'h-[50%] md:h-[40%] md:hover:h-[60%]  transition duration-200'
                     }
                   >
                     <img
@@ -102,7 +105,7 @@ const Cosecha = () => {
                         De la tierra del sol y del buen vino
                       </p>
                     </div>
-                    <a href="#">
+                    <button>
                       <div
                         className={
                           isActive
@@ -110,9 +113,9 @@ const Cosecha = () => {
                             : 'hidden'
                         }
                       >
-                        Mint
+                        ver más
                       </div>
-                    </a>
+                    </button>
                   </div>
                   <div className="">
                     <p className="text-[12px] w-6/12 mx-auto text-center md:hidden">
@@ -152,10 +155,6 @@ const Cosecha = () => {
                       aromática. Presenta sedimentos.
                     </p>
                   </div>
-                  <div className="bg-lightGrey p-[12px] text-darkGrey rounded-[7px]">
-                    <p className="text-[16px] font-medium">Rareza:</p>
-                    <p className="text-[12px]"></p>
-                  </div>
                 </div>
               </SwiperSlide>
             </Swiper>
@@ -185,7 +184,7 @@ const Cosecha = () => {
                   }
                 >
                   <div className="md:hidden">
-                    <p className="text-[12px] italic font-light text-center -mt-5">
+                    <p className="text-[12px] italic font-regular text-center -mt-5">
                       Conocé y accedé a los productos más exclusivos de Elefante
                       Wine.
                     </p>
@@ -195,16 +194,18 @@ const Cosecha = () => {
                     </p>
                   </div>
                   <div className="">
-                    <a
-                      href="#"
+                    <button
+                      onClick={() => swiper.slideNext()}
                       className="rounded-[14px] font-semibold text-[20px] py-[10px] px-[60px] bg-black text-white md:hidden"
                     >
-                      Mint
-                    </a>
+                      ver más
+                    </button>
                   </div>
                   <div
                     className={
-                      isActive ? 'h-[50%] md:h-[70%]' : 'h-[50%] md:h-[40%]'
+                      isActive
+                        ? 'h-[50%] md:h-[70%]'
+                        : 'h-[50%] md:h-[40%] md:hover:h-[60%]  transition duration-200'
                     }
                   >
                     <img
@@ -226,7 +227,7 @@ const Cosecha = () => {
                         De la tierra del sol y del buen vino
                       </p>
                     </div>
-                    <a href="#">
+                    <button onClick={() => swiper.slideNext()}>
                       <div
                         className={
                           isActive
@@ -234,9 +235,9 @@ const Cosecha = () => {
                             : 'hidden'
                         }
                       >
-                        Mint
+                        ver más
                       </div>
-                    </a>
+                    </button>
                   </div>
                   <div className="">
                     <p className="text-[12px] w-6/12 mx-auto text-center md:hidden">
@@ -277,10 +278,6 @@ const Cosecha = () => {
                       boca. Un vino con un interesante potencial de guarda.
                     </p>
                   </div>
-                  <div className="bg-lightGrey p-[12px] text-darkGrey rounded-[7px]">
-                    <p className="text-[16px] font-medium">Rareza:</p>
-                    <p className="text-[12px]"></p>
-                  </div>
                 </div>
               </SwiperSlide>
             </Swiper>
@@ -310,7 +307,7 @@ const Cosecha = () => {
                   }
                 >
                   <div className="md:hidden">
-                    <p className="text-[12px] italic font-light text-center -mt-5">
+                    <p className="text-[12px] italic font-regular text-center -mt-5">
                       Conocé y accedé a los productos más exclusivos de Elefante
                       Wine.
                     </p>
@@ -320,16 +317,18 @@ const Cosecha = () => {
                     </p>
                   </div>
                   <div className="">
-                    <a
-                      href="#"
+                    <button
+                      onClick={() => swiper.slideNext()}
                       className="rounded-[14px] font-semibold text-[20px] py-[10px] px-[60px] bg-black text-white md:hidden"
                     >
-                      Mint
-                    </a>
+                      ver más
+                    </button>
                   </div>
                   <div
                     className={
-                      isActive ? 'h-[50%] md:h-[70%]' : 'h-[50%] md:h-[40%]'
+                      isActive
+                        ? 'h-[50%] md:h-[70%]'
+                        : 'h-[50%] md:h-[40%] md:hover:h-[60%]  transition duration-200'
                     }
                   >
                     <img
@@ -351,17 +350,18 @@ const Cosecha = () => {
                         De la tierra del sol y del buen vino
                       </p>
                     </div>
-                    <a href="#">
-                      <div
+                    <div>
+                      <button
+                        onClick={() => swiper.slideNext()}
                         className={
                           isActive
                             ? 'rounded-[14px] mx-auto font-semibold text-[20px] py-[10px] w-[192px] bg-black text-white'
                             : 'hidden'
                         }
                       >
-                        Mint
-                      </div>
-                    </a>
+                        ver más
+                      </button>
+                    </div>
                   </div>
                   <div className="">
                     <p className="text-[12px] w-6/12 mx-auto text-center md:hidden">
@@ -399,10 +399,6 @@ const Cosecha = () => {
                       negras y frambuesas. Un vino con un largo potencial de
                       guarda.
                     </p>
-                  </div>
-                  <div className="bg-lightGrey p-[12px] text-darkGrey rounded-[7px]">
-                    <p className="text-[16px] font-medium">Rareza:</p>
-                    <p className="text-[12px]"></p>
                   </div>
                 </div>
               </SwiperSlide>
