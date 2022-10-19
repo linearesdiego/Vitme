@@ -4,7 +4,7 @@ import Footer from '../Footer';
 const Contacto = () => {
   return (
     <div className="bg-white h-screen flex flex-col font-poppins">
-      <div className="h-[67px] flex w-full shadow">
+      <div className="h-[67px] flex w-full shadow py-[0.7%]">
         <p className="text-[24px] font-medium ml-4 my-auto">Contacto</p>
       </div>
 
@@ -25,7 +25,7 @@ const Contacto = () => {
           method=""
           className=" md:w-6/12 md:bg-black md:rounded-[30px]	 md:m-10"
         >
-          <div className="md:py-[66px] md:px-[56px] ">
+          <div className=" md:p-[5%] ">
             <div className=" flex flex-row mx-5">
               <label className="w-[25%] my-auto mr-2 md:text-white">
                 Tu email:
