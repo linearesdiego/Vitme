@@ -26,9 +26,9 @@ const Cosecha = () => {
         </p>
       </div>
 
-      <div className="w-[55%] h-fit ml-20 absolute hidden md:block mt-[5%]">
+      <div className="w-[55%] h-fit ml-[3%] absolute hidden md:block mt-[2.5%]">
         <p className="font-black text-[64px]">Conocé y disfrutá</p>
-        <p className="font-regular text-[24px] w-[70%]">
+        <p className="font-regular text-[22px] w-[70%]">
           Conocé y accedé a los productos más exclusivos de{' '}
           <span className="italic"> Elefante Wine</span>{' '}
         </p>
@@ -99,7 +99,7 @@ const Cosecha = () => {
                   >
                     <div>
                       <p className="text-[48px] font-black">Pinot Noir</p>
-                      <p className={isActive ? 'text-[20px] italic' : 'hidden'}>
+                      <p className={isActive ? 'text-[16px] italic' : 'hidden'}>
                         De la tierra del sol y del buen vino
                       </p>
                     </div>
@@ -209,7 +209,7 @@ const Cosecha = () => {
                   >
                     <div>
                       <p className="text-[48px] font-black">Syrah</p>
-                      <p className={isActive ? 'text-[20px] italic' : 'hidden'}>
+                      <p className={isActive ? 'text-[16px] italic' : 'hidden'}>
                         De la tierra del sol y del buen vino
                       </p>
                     </div>
@@ -320,7 +320,7 @@ const Cosecha = () => {
                   >
                     <div>
                       <p className="text-[48px] font-black">Blend</p>
-                      <p className={isActive ? 'text-[20px] italic' : 'hidden'}>
+                      <p className={isActive ? 'text-[16px] italic' : 'hidden'}>
                         De la tierra del sol y del buen vino
                       </p>
                     </div>

@@ -140,7 +140,7 @@ html {
     display: inline-flex;
     height: 154px;
     width: 414px;
-    margin: 0;
+    margin: 0px 10px;
   }
   .equipo2 {
     justify-content: space-between;

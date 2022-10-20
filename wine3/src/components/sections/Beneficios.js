@@ -30,7 +30,7 @@ const Beneficios = () => {
           </p>
 
           <div className="flex flex-col justify-evenly h-[90%] md:h-[80%]">
-            <div className="bg-lightGrey rounded-[19px] text-darkGrey p-5 mx-5 shadow">
+            <div className="bg-lightGrey rounded-[19px] text-darkGrey p-3 m-2 shadow">
               <div className="flex w-fit mx-auto">
                 <p className="mr-2 font-regular text-[24px] md:text-[32px]">
                   Beneficio I{' '}
@@ -45,7 +45,7 @@ const Beneficios = () => {
                 exclusivas.
               </p>
             </div>
-            <div className="bg-lightGrey rounded-[19px] text-darkGrey p-5 mx-5 shadow">
+            <div className="bg-lightGrey rounded-[19px] text-darkGrey p-3 m-2 shadow">
               <div className="flex w-fit mx-auto">
                 <p className="mr-2 font-regular text-[24px] md:text-[32px]">
                   Beneficio II{' '}
@@ -61,7 +61,7 @@ const Beneficios = () => {
                 física.
               </p>
             </div>
-            <div className="bg-lightGrey rounded-[19px] text-darkGrey p-5 mx-5 shadow">
+            <div className="bg-lightGrey rounded-[19px] text-darkGrey p-3 m-2 shadow">
               <div className="flex w-fit mx-auto">
                 <p className="mr-2 font-regular text-[24px] md:text-[32px]">
                   Beneficio III{' '}
