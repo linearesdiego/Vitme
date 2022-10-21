@@ -43,16 +43,13 @@ const Hero = () => {
                     discord
                   </p>
                 </div>
-                <div className="flex flex-col">
-                  <img
-                    src={twitterB}
-                    alt="twitter"
-                    className="m-auto mt-5 mb-2 max-h-[25px]"
-                  ></img>
-                  <p className="font-poppins text-black font-regular text-[16px]">
-                    twitter
-                  </p>
-                </div>
+                
+                <a href="https://www.linkedin.com/in/garciajimena" target="_blank"  without rel="noreferrer">
+                  <div className="flex flex-col">
+                    <img src={twitterB} alt="twitter" className="m-auto mt-5 mb-2 max-h-[25px]"/>
+                    <p className="font-poppins text-black font-regular text-[16px]">twitter</p>
+                  </div>
+                </a>
                 <div className="flex flex-col">
                   <img
                     src={telegramB}
