@@ -19,7 +19,7 @@ const Cosecha = () => {
   }, [windowSize]);
 
   return (
-    <div className="h-screen font-poppins pt-[0%] flex flex-col">
+    <div id="cosecha" className="h-screen font-poppins pt-[0%] flex flex-col">
       <div className="h-[6.5%] flex w-full shadow">
         <p className="md:text-[32px] md:font-black ml-4 my-auto font-medium text-[24px] ">
           Cosecha

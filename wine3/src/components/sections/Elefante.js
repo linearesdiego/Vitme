@@ -24,7 +24,7 @@ const Elefante = () => {
       }}
     >
       <SwiperSlide className="h-full">
-        <div className="h-[6.5%] flex w-full shadow bg-white z-50">
+        <div id='elefante' className="h-[6.5%] flex w-full shadow bg-white z-50">
           <p className="md:text-[32px] md:font-black ml-4 my-auto font-medium text-[24px] ">
             Elefante Wine
           </p>

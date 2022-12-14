@@ -10,28 +10,29 @@ const Nav = () => {
   const [showLote, setShowLote] = useState(false);
   const [showElefante, setShowElefante] = useState(false);
   return (
-    <div>
+    <div className="fixed w-full nav" id="home">
       <div className="h-[65px] hidden md:flex shadow-md z-50 w-full ml-auto bg-white">
-        <div className="font-poppins text-[20px] my-auto ml-auto mr-10 flex">
-          <a href="#comofunciona" className="border-r-2 border-r-grey px-5">
-            <p className="hover:border-b-2 hover:border-black border-b-2 border-white transition duration-150">
+        <div className="font-poppins text-[20px] my-auto ml-auto mr-10 flex w-full justify-evenly items-center">
+          <a href="#home"><h1 className="font-poppins font-black text-3xl">Vintme</h1></a>
+          <a href="#comofunciona" className="border-r-2 border-r-#979696; px-5">
+            <p className="hover:border-b-2 hover:border-black border-b-2 border-white transition duration-150 ">
               ¿Cómo funciona?
             </p>
           </a>
 
-          <a href="#cosecha" className="border-r-2 border-r-grey px-5">
+          <a href="#cosecha" className="border-r-2 border-r-#979696; px-5">
             <p className="hover:border-b-2 hover:border-black border-b-2 border-white transition duration-150">
               Cosecha
             </p>
           </a>
 
-          <a href="#beneficios" className="border-r-2 border-r-grey px-5">
+          <a href="#beneficios" className="border-r-2 border-r-#979696; px-5">
             <p className="hover:border-b-2 hover:border-black border-b-2 border-white transition duration-150">
               Beneficios
             </p>
           </a>
 
-          <a href="#elefante" className="border-r-2 border-r-grey px-5">
+          <a href="#elefante" className="border-r-2 border-r-#979696; px-5">
             <p className="hover:border-b-2 hover:border-black border-b-2 border-white transition duration-150">
               Elefante Wine
             </p>
@@ -39,10 +40,16 @@ const Nav = () => {
 
           <a
             href="#equipo"
-            className="px-5 border-b-2 border-white hover:border-b-2 hover:border-black transition duration-150"
+            className="border-r-2 border-r-#979696; px-5"
           >
-            El equipo
+            <p className="hover:border-b-2 hover:border-black border-b-2 border-white transition duration-150">
+              El equipo
+            </p>
           </a>
+          <div className="flex gap-3">
+            <button className="btnVint">VINT</button>
+            <button className="btnClaim">Claim</button>
+          </div>
         </div>
       </div>
 

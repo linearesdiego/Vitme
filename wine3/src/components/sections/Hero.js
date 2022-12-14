@@ -15,7 +15,6 @@ import Nav from '../Nav';
 const Hero = () => {
   return (
     <div className="h-screen flex flex-col font-poppins">
-      <Nav />
       <div className="w-11/12 h-[93.5%] mx-auto mt-auto md:flex justify-between">
         <div className="md:w-5/12 md:flex md:flex-col justify-between h-[20%] md:h-full">
           <div className="flex flex-col h-full md:h-fit md:mt-[1%]">

@@ -13,6 +13,7 @@ import Elefante from '../components/sections/Elefante';
 import Equipo from '../components/sections/Equipo';
 import Contacto from '../components/sections/Contacto';
 import SwiperCore, { Mousewheel } from 'swiper';
+import Nav from '../components/Nav';
 
 // install Swiper modules
 SwiperCore.use([Mousewheel]);
@@ -20,38 +21,15 @@ SwiperCore.use([Mousewheel]);
 const Home = () => {
   return (
     <div>
-      <Swiper
-        className="mySwiper swiper-v h-screen"
-        spaceBetween={0}
-        direction={'vertical'}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Mousewheel]}
-        mousewheel={true}
-      >
-        <SwiperSlide>
+      <Nav />
+      
           <Hero />
-        </SwiperSlide>
-        <SwiperSlide id="comofunciona">
           <ComoFunciona />
-        </SwiperSlide>
-        <SwiperSlide id="cosecha">
           <Cosecha />
-        </SwiperSlide>
-        <SwiperSlide id="beneficios">
           <Beneficios />
-        </SwiperSlide>
-        <SwiperSlide id="elefante">
           <Elefante />
-        </SwiperSlide>
-        <SwiperSlide id="equipo">
           <Equipo />
-        </SwiperSlide>
-        <SwiperSlide id="contacto">
           <Contacto />
-        </SwiperSlide>
-      </Swiper>
     </div>
   );
 };
