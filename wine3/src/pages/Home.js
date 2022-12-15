@@ -29,7 +29,7 @@ const Home = () => {
           <Beneficios />
           <Elefante />
           <Equipo />
-          <Contacto 
+          <Contacto />
     </div>
   );
 };
