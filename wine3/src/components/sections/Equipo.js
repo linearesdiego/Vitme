@@ -11,7 +11,6 @@ import twitter from '../../assets/equipo/twitter.png';
 import avatar1 from '../../assets/equipo/avatar1.jpg';
 import avatar2 from '../../assets/equipo/avatar2.jpg';
 import gerardobarboni from '../../assets/equipo/gerardobarboni.jpeg';
-import ezequielmorales from '../../assets/equipo/ezequielmorales.jpeg';
 
 const Equipo = () => {
   return (
