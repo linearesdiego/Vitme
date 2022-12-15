@@ -12,7 +12,7 @@ import Beneficios from '../components/sections/Beneficios';
 import Elefante from '../components/sections/Elefante';
 import Equipo from '../components/sections/Equipo';
 import Contacto from '../components/sections/Contacto';
-import SwiperCore, { Mousewheel } from 'swiper';
+import SwiperCore, { Mousewheel } from 'swiper'; //////asdasd 
 import Nav from '../components/Nav';
 
 // install Swiper modules
@@ -29,7 +29,7 @@ const Home = () => {
           <Beneficios />
           <Elefante />
           <Equipo />
-          <Contacto />
+          <Contacto 
     </div>
   );
 };
