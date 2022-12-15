@@ -7,7 +7,7 @@ const Beneficios = () => {
     <div id="beneficios" className="h-screen flex flex-col font-poppins">
       <div className="h-[6.5%] flex w-full shadow bg-white z-50">
         <p className="md:text-[32px] md:font-black ml-4 my-auto font-medium text-[24px] ">
-          Beneficios
+          Bene
         </p>
       </div>
       <div className="h-[93.5%] flex flex-col md:flex-row-reverse md:justify-between m-auto md:w-11/12">
