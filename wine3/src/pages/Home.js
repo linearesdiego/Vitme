@@ -4,7 +4,7 @@ import React from 'react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/mousewheel';
-import ComoFunciona from '../components/sections/ComoFunciona';
+import ComoFunciona from '../components/sections/ComoFunciona/ComoFunciona';
 import Hero from '../components/sections/Hero/Hero';
 import Cosecha from '../components/sections/Cosecha';
 import Beneficios from '../components/sections/Beneficios';
