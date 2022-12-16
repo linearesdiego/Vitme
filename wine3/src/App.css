@@ -1,21 +1,13 @@
 .swiper-pagination-bullet-active {
-  background-color: #181818;
-  height: 9px;
-  width: 9px;
-  margin: auto;
+    background-color: #181818;
+    height: 9px;
+    width: 9px;
+    margin: auto;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
-
-/* 
-.swiper-pagination-bullet {
-  background-color: #fbfbfb !important;
-  height: 7px;
-  width: 7px;
-}
-  */
 
 /* 
 .swiper-pagination-bullet {
