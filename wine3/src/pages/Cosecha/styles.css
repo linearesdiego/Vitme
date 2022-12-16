@@ -16,7 +16,7 @@ h3{
   font-family: 'Poppins', sans-serif;
 }
 
-.container
+.container{
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
