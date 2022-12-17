@@ -10,7 +10,7 @@ const Nav = () => {
   const [showLote, setShowLote] = useState(false);
   const [showElefante, setShowElefante] = useState(false);
   return (
-    <div className="fixed w-full nav" id="home">
+    <div className="fixed w-full nav">
       <div className="h-[65px] hidden md:flex shadow-md z-50 w-full ml-auto bg-white">
         <div className="font-poppins text-[20px] my-auto ml-auto mr-10 flex w-full justify-evenly items-center">
           <a href="#home"><h1 className="font-poppins font-black text-3xl">Vintme</h1></a>

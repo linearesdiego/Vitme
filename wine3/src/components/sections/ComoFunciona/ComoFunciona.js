@@ -3,7 +3,7 @@ import "./comofunciona.css";
 
 const ComoFunciona = () => {
   return (
-    <div>
+    <div id="comofunciona">
       <section className="seccion2">
         <h2 tabindex="0">¿Cómo funciona Vintme?</h2>
 

@@ -3,7 +3,7 @@ import './Beneficios.css';
 
 const Beneficios = () => {
   return (
-    <>
+    <div id='beneficios'>
     
     <h2>¡Sé parte de la comunidad Vinter!</h2>
 
@@ -66,7 +66,7 @@ const Beneficios = () => {
         </div>
     </div>
 
-  </>
+  </div>
   );
 };
 
