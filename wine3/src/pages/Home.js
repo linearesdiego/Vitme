@@ -1,5 +1,5 @@
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+
 
 //Styles
 import 'swiper/css';
@@ -8,7 +8,7 @@ import 'swiper/css/mousewheel';
 import ComoFunciona from '../components/sections/ComoFunciona';
 import Hero from '../components/sections/Hero';
 import Cosecha from '../components/sections/Cosecha';
-import Beneficios from '../components/sections/Beneficios';
+import Beneficios from '../components/sections/Beneficios/Beneficios';
 import Elefante from '../components/sections/Elefante';
 import Equipo from '../components/sections/Equipo';
 import Contacto from '../components/sections/Contacto';
@@ -29,7 +29,7 @@ const Home = () => {
           <Beneficios />
           <Elefante />
           <Equipo />
-          <Contacto 
+          <Contacto />
     </div>
   );
 };
