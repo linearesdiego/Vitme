@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.vinos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.vino {
+  font-size: 50px;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.subtitulo {
+  margin: 1rem;
+}
+
+.img-vino {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  padding: 5px 15px 5px 15px;
+}
+
+.btn-1 {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+}
+
+.btn-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+/* haciendo responsive */
+
+@media screen and (min-width: 1000px) {
+  .vinos {
+      display: none;
+  }
+
+  button {
+      color: white;
+      background-color: black;
+      border-radius: 10px;
+      padding: 5px 15px 5px 15px;
+  }
+
+  .cosecha-titulo {
+    font-family: 'Poppins', sans-serif;
+      margin-left: 2rem;
+      margin-bottom: 2rem;
+  }
+
+  .cosecha {
+      font-family: 'Poppins', sans-serif;
+      font-size: 50px;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+  }
+
+  .cosecha-sub {
+      font-weight: lighter;
+  }
+
+  .info-vino {
+      margin-left: 1rem;
+  }
+
+  .varietal {
+      font-size: 35px;
+  }
+
+  .seccion {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .nombre-botella {
+      width: 40%;
+  }
+
+  .descripcion {
+      padding-right: 5rem;
+  }
+
+  .btn-3 {
+      margin-top: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .nft{
+      color: rgb(211, 129, 29);
+  }
+
+
+}
