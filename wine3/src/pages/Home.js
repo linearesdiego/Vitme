@@ -10,7 +10,7 @@ import Cosecha from '../components/sections/Cosecha';
 import Beneficios from '../components/sections/Beneficios/Beneficios';
 import Elefante from '../components/sections/Elefante';
 import Equipo from '../components/sections/Equipo';
-import Contacto from '../components/sections/Contacto';
+import Contacto from '../components/sections/Contacto/Contacto';
 import SwiperCore, { Mousewheel } from 'swiper'; //////asdasd 
 // import Nav from '../components/Nav';
 import NavCaro from '../components/NavCaro';
