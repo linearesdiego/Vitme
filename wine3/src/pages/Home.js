@@ -12,7 +12,8 @@ import Elefante from '../components/sections/Elefante';
 import Equipo from '../components/sections/Equipo';
 import Contacto from '../components/sections/Contacto';
 import SwiperCore, { Mousewheel } from 'swiper'; //////asdasd 
-import Nav from '../components/Nav';
+// import Nav from '../components/Nav';
+import NavCaro from '../components/NavCaro';
 
 // install Swiper modules
 SwiperCore.use([Mousewheel]);
@@ -20,7 +21,8 @@ SwiperCore.use([Mousewheel]);
 const Home = () => {
   return (
     <div>
-      <Nav />
+      {/* <Nav /> */}
+      <NavCaro />
       
           <Hero />
           <ComoFunciona />
