@@ -1,0 +1,90 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.hero-sup {
+  margin: 20px;
+  width: 80%;
+}
+.titulos-hero {
+  color: black;
+}
+.titulos-hero h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+.titulos-hero h2 {
+  font-size: 16px;
+  font-weight: 275;
+}
+.botones-hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 30px 0;
+  gap: 10px;
+}
+.botones-hero a {
+  text-decoration: none;
+  width: 198px;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+.btn-1 {
+  background-color: #181818;
+  color: white;
+}
+.btn-2 {
+  background-color: white;
+  color: black;
+  border: solid 1px black;
+}
+.sumate-al-club {
+  display: none;
+}
+@media screen and (min-width: 850px) {
+  .hero {
+    display: flex;
+    justify-content: space-around;
+  }
+  .hero-sup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+  }
+  .titulos-hero h1 {
+    font-size: 64px;
+  }
+  .titulos-hero h2 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .botones-hero {
+    align-items: center;
+  }
+  .botones-hero a{
+    width: 300px;
+  }
+  .sumate-al-club {
+    display: block;
+    width: 350px;
+    margin: 100px auto 0;
+  }
+  .redes{
+    display: flex;
+    justify-content: center;
+  }
+  .hero-infe img{
+    width: 500px ;
+  }
+  
+}

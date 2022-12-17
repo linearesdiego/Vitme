@@ -5,7 +5,7 @@ import './App.css';
 import ComoFunciona from './components/sections/ComoFunciona';
 import Cosecha from './components/sections/Cosecha/Cosecha';
 import Elefante from './components/sections/Elefante';
-import Equipo from './components/sections/Equipo';
+import Equipo from './components/sections/Equipo/equipo';
 
 function App() {
   return (
