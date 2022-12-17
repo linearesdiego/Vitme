@@ -1,12 +1,11 @@
 import React from 'react';
 
-
 //Styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/mousewheel';
-import ComoFunciona from '../components/sections/ComoFunciona';
-import Hero from '../components/sections/Hero';
+import ComoFunciona from '../components/sections/ComoFunciona/ComoFunciona';
+import Hero from '../components/sections/Hero/Hero';
 import Cosecha from '../components/sections/Cosecha';
 import Beneficios from '../components/sections/Beneficios/Beneficios';
 import Elefante from '../components/sections/Elefante';
