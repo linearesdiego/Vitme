@@ -27,16 +27,3 @@ h3{
 img{
   width: 100%;
 }
-
-button{
-  display: flex;
-  align-items: center;
-  font-family: 'Poppins', sans-serif;
-  padding: 10px 100px;
-  color:#E0E0E0;
-  background-color: rgb(38, 36, 36);
-  text-align: center;
-  text-decoration: none;
-  font-size: 25px;
-  border-radius: 12px;
-}
