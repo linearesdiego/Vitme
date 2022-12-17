@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/mousewheel';
 import ComoFunciona from '../components/sections/ComoFunciona/ComoFunciona';
 import Hero from '../components/sections/Hero/Hero';
-import Cosecha from '../components/sections/Cosecha';
+import Cosecha from '../components/sections/Cosecha/Cosecha';
 import Beneficios from '../components/sections/Beneficios/Beneficios';
 import Elefante from '../components/sections/Elefante';
 import Equipo from '../components/sections/Equipo/equipo';
