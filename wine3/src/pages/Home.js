@@ -11,8 +11,9 @@ import Beneficios from '../components/sections/Beneficios/Beneficios';
 import Elefante from '../components/sections/Elefante';
 import Equipo from '../components/sections/Equipo/equipo';
 import Contacto from '../components/sections/Contacto';
-import SwiperCore, { Mousewheel } from 'swiper';
-import Nav from '../components/Nav';
+import SwiperCore, { Mousewheel } from 'swiper'; //////asdasd 
+// import Nav from '../components/Nav';
+import NavCaro from '../components/NavCaro';
 
 
 // install Swiper modules
@@ -21,7 +22,8 @@ SwiperCore.use([Mousewheel]);
 const Home = () => {
   return (
     <div>
-      <Nav />
+      {/* <Nav /> */}
+      <NavCaro />
       
           <Hero />
           <ComoFunciona />
