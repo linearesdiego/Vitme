@@ -5,8 +5,6 @@ import './Cosecha.css';
 const Cosecha = () => {
 	return (
 		<>
-
-
 			<div class="vinos">
 
 				<div class="box">
