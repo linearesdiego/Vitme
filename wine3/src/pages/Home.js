@@ -10,9 +10,9 @@ import Cosecha from '../components/sections/Cosecha/Cosecha';
 import Beneficios from '../components/sections/Beneficios/Beneficios';
 import Elefante from '../components/sections/Elefante';
 import Equipo from '../components/sections/Equipo/equipo';
-import Contacto from '../components/sections/Contacto';
-import SwiperCore, { Mousewheel } from 'swiper'; //////asdasd 
-// import Nav from '../components/Nav';
+import Contacto from '../components/sections/Contacto/Contacto';
+import SwiperCore, { Mousewheel } from 'swiper';
+
 import NavCaro from '../components/NavCaro';
 
 
@@ -24,14 +24,14 @@ const Home = () => {
     <div>
       {/* <Nav /> */}
       <NavCaro />
-      
-          <Hero />
-          <ComoFunciona />
-          <Cosecha />
-          <Beneficios />
-          <Elefante />
-          <Equipo />
-          <Contacto />
+
+      <Hero />
+      <ComoFunciona />
+      <Cosecha />
+      <Beneficios />
+      <Elefante />
+      <Equipo />
+      <Contacto/>
     </div>
   );
 };

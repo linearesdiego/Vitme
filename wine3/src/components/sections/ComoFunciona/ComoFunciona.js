@@ -13,7 +13,7 @@ const ComoFunciona = () => {
               1
             </div>
             <div>
-              <img src={require("../../../assets/card1.png")} alt="NFT-image" />
+              <img src={require("../../../assets/card1.png")} alt="img" />
             </div>
           </div>
           <div className="derecha">
@@ -34,7 +34,7 @@ const ComoFunciona = () => {
               2
             </div>
             <div>
-              <img src={require("../../../assets/card2.png")} />
+              <img src={require("../../../assets/card2.png")} alt="img" />
             </div>
           </div>
           <div className="derecha">
@@ -56,7 +56,7 @@ const ComoFunciona = () => {
               3
             </div>
             <div>
-              <img src={require("../../../assets/card3.png")} alt="" />
+              <img src={require("../../../assets/card3.png")} alt="img" />
             </div>
           </div>
           <div className="derecha">

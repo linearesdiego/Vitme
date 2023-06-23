@@ -1,0 +1,29 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+h2{
+font-size: 50px;
+/* font-style: bold; */
+font-family: 'Poppins', sans-serif;
+}
+
+h3{
+  font-size: 30 px;
+  font-weight: lighter;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+img{
+  width: 100%;
+}
